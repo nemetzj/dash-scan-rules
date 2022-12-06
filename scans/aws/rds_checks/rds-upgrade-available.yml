@@ -1,0 +1,6 @@
+policies:
+  - name: rds-upgrade-available
+    resource: rds
+    filters:
+      - type: upgrade-available
+        major: False

@@ -1,0 +1,24 @@
+{
+  "description": "Unencrypted volumes are xyz",
+  "recommendation": "Enable encryption for any of these unencrypted volumes",
+  "key_fields": [
+    {"Encrypted": "Encrypted"},
+    {"Attached Instance": ""},
+    {"Volume ID": "Attachments[VolumeID]"},
+    {"Volume Availability Zone": "AvailabilityZone"},
+    {"Availability Zone": "AvailabilityZone"}
+  ],
+  "priority": [
+    {"Default": "High"},
+    {"SOC 2": "High"},
+    {"HIPAA": "Medium"},
+    {"ISO 27001": "Medium"},
+    {"GDPR": "Medium"}
+  ],
+  "compliance_mappings": [
+    {"SOC 2": [ "CC6.1", "CC6.2" ]},
+    {"HIPAA": [ "TECH-1", "TECH-2" ]},
+    {"ISO 27001": [ "ISO-1", "ISO-2" ]},
+    {"GDPR": [ "GDPR-1", "GDPR-2" ]}
+  ]
+}

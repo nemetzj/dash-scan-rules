@@ -1,0 +1,24 @@
+#Run custodian without actions using --dryrun (get resources). Much quicker command
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX custodian run --dryrun --region all --output-dir=./my-report ec2-unencrypted-volumes.yml
+
+
+
+#FORMATS
+
+#GRID TEXT FORMAT
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian report --region all --output-dir=./my-report ec2-unencrypted-volumes.yml --format grid
+
+#CSV (in CLI)
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian report --region all --output-dir=./my-report ec2-unencrypted-volumes.yml --format csv
+
+
+https://cloudcustodian.io/docs/quickstart/usage.html#reports
+
+
+
+##############################################################
+#Run these steps in a row to run different scan sets and put them in the same output
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian run --dry-run --region all --output-dir=./output-report ./scans/ec2_checks/all_ec2_checks.yml
+
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian run --dry-run --region all --output-dir=./output-report ./scans/account_checks/example-check.yml
+

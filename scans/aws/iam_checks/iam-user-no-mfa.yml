@@ -1,0 +1,7 @@
+policies:
+  - name: iam-mfa-active-keys-no-login
+    resource: iam-user
+    filters:
+      - type: credential
+        key: mfa_active
+        value: false

@@ -1,0 +1,14 @@
+policies:
+  - name: ec2-port-27018-mongodb-open-to-all
+    description: Port 27018 is open to all via security group ingress
+    resource: security-group
+    filters:
+      - or:
+          - type: ingress
+            Ports: [27018]
+            Cidr:
+              value: "0.0.0.0/0"
+          - type: ingress
+            Ports: [27018]
+            CidrV6:
+              value: "::/0"
