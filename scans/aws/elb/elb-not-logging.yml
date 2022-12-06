@@ -1,0 +1,5 @@
+policies:
+  - name: elb-not-logging
+    resource: elb
+    filters:
+      - type: is-not-logging

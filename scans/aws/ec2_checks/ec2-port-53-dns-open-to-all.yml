@@ -1,0 +1,14 @@
+policies:
+  - name: ec2-port-53-ssh-open-to-all
+    description: Port 53 is open to all via security group ingress
+    resource: security-group
+    filters:
+      - or:
+          - type: ingress
+            Ports: [53]
+            Cidr:
+              value: "0.0.0.0/0"
+          - type: ingress
+            Ports: [53]
+            CidrV6:
+              value: "::/0"
