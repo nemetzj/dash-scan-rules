@@ -1,0 +1,7 @@
+policies:
+  - name: redshift-cluster-logging-disabled
+    resource: redshift
+    filters:
+      - type: logging
+        key: LoggingEnabled
+        value: false

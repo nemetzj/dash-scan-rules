@@ -1,0 +1,5 @@
+policies:
+  - name: redshift-cluster-version-upgrade-disabled
+    resource: redshift
+    filters:
+      - AllowVersionUpgrade: false

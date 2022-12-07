@@ -1,0 +1,3 @@
+policies:
+  - name: rds
+    resource: aws.redshift
