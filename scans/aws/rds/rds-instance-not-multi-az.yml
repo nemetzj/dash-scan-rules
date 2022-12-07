@@ -1,0 +1,6 @@
+policies:
+  - name: rds-instance-not-multi-az
+    description: RDS instance is not configured as multi-availability zone setup.
+    resource: rds
+    filters:
+      - MultiAZ: false

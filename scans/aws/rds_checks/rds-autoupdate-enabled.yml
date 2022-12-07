@@ -1,6 +1,0 @@
-policies:
-  - name: enable-rds-autopatch
-    description: Find RDS instances where auto minor version upgrade in not enabled
-    resource: rds
-    filters:
-      - AutoMinorVersionUpgrade: false

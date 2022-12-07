@@ -1,0 +1,8 @@
+policies:
+  - name: rds-instance-backup-disabled
+    resource: rds
+    filters:
+      - type: value
+        key: BackupRetentionPeriod
+        value: 0
+        op: eq
