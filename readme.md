@@ -4,7 +4,7 @@
 3. Navigate to the directory where you want to run a rule
     1. ```cd /scans/aws/ec2```
     2. Run commands using "custodian"
-    3. Run custodian checks using the following
+    3. Run custodian checks using the following 
        - ```AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX custodian run --dryrun --region all --output-dir=./my-report ec2-unencrypted-volumes.yml```
        - ```AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian run --dry-run --region all --output-dir=./output-report ./scans/account_checks/example-check.yml```
 
