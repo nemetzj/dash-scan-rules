@@ -1,0 +1,10 @@
+policies:
+  - name: iam-root-active-access-keys
+    resource: account
+    description: Verifies root access keys don't exist anymore and notifies is they do
+    filters:
+      - type: iam-summary
+        key: AccountAccessKeysPresent
+        value: true
+        op: eq
+        value_type: swap

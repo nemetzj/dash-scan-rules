@@ -1,5 +1,5 @@
 policies:
-  - name: iam-mfa-active-keys-no-login
+  - name: iam-user-no-mfa
     resource: iam-user
     filters:
       - type: credential
