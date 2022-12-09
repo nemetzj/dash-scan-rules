@@ -1,9 +1,0 @@
-policies:
-  - name: ec2-find-unencrypted-volumes
-    description: Get all unencrypted EBS volumes
-    resource: aws.ebs
-    #region: us-east-1
-    filters:
-      - type: value
-        key: Encrypted
-        value: false
