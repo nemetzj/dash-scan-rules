@@ -1,7 +1,0 @@
-policies:
-  - name: alb-no-deletion-protection
-    resource: app-elb
-    filters:
-      - type: attributes
-        key: "deletion_protection.enabled"
-        value: false

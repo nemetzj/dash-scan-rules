@@ -1,4 +1,0 @@
-policies:
-  - name: s3
-    resource: s3
-    region: us-east-1

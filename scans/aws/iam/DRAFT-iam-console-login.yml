@@ -1,7 +1,0 @@
-policies:
-  - name: console-login-detected
-    resource: account
-    mode:
-      type: cloudtrail
-      events:
-        - ConsoleLogin

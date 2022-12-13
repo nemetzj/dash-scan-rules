@@ -1,5 +1,0 @@
-policies:
-  - name: rds-instance-public-accessibility
-    resource: rds
-    filters:
-      - PubliclyAccessible: true

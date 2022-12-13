@@ -1,0 +1,14 @@
+{
+  "ruleset_id": "HIPAA Security Ruleset",
+  "description": "",
+  "rules": [
+    {
+      "type": "custodian",
+      "id": "ebs-volume-fault-tolerance"
+    },
+    {
+      "type": "custodian",
+      "id": "another-scan"
+    }
+  ]
+}

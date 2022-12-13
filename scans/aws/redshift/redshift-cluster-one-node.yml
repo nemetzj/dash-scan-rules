@@ -1,6 +1,0 @@
-policies:
-  - name: redshift-cluster-one-node
-    description: Redshift cluster has only 1 single node in the cluster
-    resource: redshift
-    filters:
-      - NumberOfNodes: 1

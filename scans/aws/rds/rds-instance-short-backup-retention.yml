@@ -1,8 +1,0 @@
-policies:
-  - name: rds-instance-short-backup-retention
-    resource: rds
-    filters:
-      - type: value
-        key: BackupRetentionPeriod
-        value: 7
-        op: lt

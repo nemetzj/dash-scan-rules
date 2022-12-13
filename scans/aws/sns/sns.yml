@@ -1,3 +1,0 @@
-policies:
-  - name: sns
-    resource: sns

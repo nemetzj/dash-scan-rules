@@ -1,5 +1,0 @@
-policies:
-  - name: redshift-cluster-unencrypted
-    resource: redshift
-    filters:
-      - Encrypted: false

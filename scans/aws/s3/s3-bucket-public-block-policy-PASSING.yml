@@ -1,8 +1,0 @@
-policies:
-  - name: s3-bucket-public-block-policy-PASSING
-    description: S3 buckets where public access block is not enabled -Permissions - s3:GetBucketPublicAccessBlock
-    resource: s3
-    region: us-east-1
-    filters:
-      - type: check-public-block
-        BlockPublicPolicy: true

@@ -1,7 +1,0 @@
-policies:
-  - name: cloudtrail-logging-disabled
-    resource: aws.cloudtrail
-    filters:
-      - type: status
-        key: IsLogging
-        value: False

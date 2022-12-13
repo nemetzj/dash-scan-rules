@@ -1,0 +1,223 @@
+[
+  {
+    "policy_id": "policy-management-policy",
+    "name": "Policy Management Policy",
+    "description": "The Policy Management Policy defines how compliance policies will be stored, managed and maintained. This policy also dictates how changes to policies are made and how employees interact with administrative policies.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "risk-management-policy",
+    "name": "Risk Management Policy",
+    "description": "The Risk Management Policy defines how risk assessments, risk management, and remediation will be performed. This policy includes overall scheduling of assessment activities, workflow, and documentation.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "roles-policy",
+    "name": "Roles Policy ",
+    "description": "The Roles Policy defines how the Privacy Officer and Security Officer are defined within the organization, as well as their overall security role responsibilities. Organization's should customize this policy to adequately reflect how responsibilities are delegated between these compliance roles or whether the organization will operate using a combined Security/Privacy officer.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "data-management-policy",
+    "name": "Data Management Policy",
+    "description": "The Data Management Policy defines how data backup is conducted. Organizations should define how systems and ePHI/PII data will be backed up. This includes defining how backups are tested, secured, and managed.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "system-access-policy",
+    "name": "System Access Policy",
+    "description": "The System Access Policy defines how access to systems, servers and services with ePHI/PII are granted. In this policy, organization's define production system protections including password management, access control, automatic logoff. This policy should be completed in collaboration with a technical team member as information about operating systems and cloud infrastructure is required.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "auditing-policy",
+    "name": "Auditing Policy",
+    "description": "The Audit Logging Policy defines how organizations audit access and activity with ePHI/PII. This includes defining at which levels logging occurs, what audit logging solutions are in use, how long logs are retained, and the process for reviewing logs.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "configuration-management-policy",
+    "name": "Configuration Management Policy",
+    "description": "The Configuration Management Policy defines how production systems are provisioned and setup, either through scripting, automation or manual setup. This includes defining how operating systems will be secured after setup - including encryption, organizational roles, audit logging and intrusion detection., Organizations also define how production systems will be updated and patched in the future.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "facility-access-policy",
+    "name": "Facility Access Policy",
+    "description": "The Facility Access Policy defines how organizations physically secure any company hardware, systems, or sensitive information. Cloud service providers such as Amazon Web Services (AWS) manage a lot of physical securities, but organizations should define how employee access, visitors, and building locks are managed for the office/workplace.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "incident-response-policy",
+    "name": "Incident Response Policy",
+    "description": "The Incident Response Policy defines how security and compliance incidents will be reported, investigated, and remediated. The policy defines how employees can report security incidents and how security teams form and operate.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "breach-policy",
+    "name": "Breach Policy",
+    "description": "The Breach Policy defines how the organization will respond in response to a security breach or disclosure of ePHI/PII. This policy defines which team members will investigate potential breaches and how your team may notify customers in case of a breach.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "disaster-recovery-policy",
+    "name": "Disaster Recovery Policy",
+    "description": "The Disaster Recovery Policy defines when the disaster recovery process is triggered, how organizations manage and test these processes. Organizations typically define plans for recovering systems in the event of data loss or issues with cloud availability.\n",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "disposable-media-policy",
+    "name": "Disposable Media Policy",
+    "description": "The Disposable Media Policy defines how organizations destroy or dispose of ePHI/PII records. This policy typically defines whether paper records or specific portable devices store ePHI/PII and how this data is managed if it needs to be disposed of.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "ids-policy",
+    "name": "IDS Policy",
+    "description": "",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "vulnerability-scanning-policy",
+    "name": "Vulnerability Scanning Policy",
+    "description": "The Vulnerability Scanning Policy defines how organizations conduct vulnerability scanning of systems. This policy also defines how scanning occurs, how vulnerabilities are reported and remediated, and how penetration testing is conducted.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "data-integrity-policy",
+    "name": "Data Integrity Policy",
+    "description": "The Data Integrity Policy defines how organizations manage overall system data security. This policy connects to other safeguards defined for intrusion detection, system access, configuration management, and vulnerability scanning.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "data-retention-policy",
+    "name": "Data Retention Policy",
+    "description": "",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "employee-policy",
+    "name": "Employee Policy",
+    "description": "The Employee Policy defines how employees access organization systems and are trained. This policy also defines bring-your-own-device (BYOD) standards and general rules for employees.",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "3rd-party-policy",
+    "name": "3rd Party Policy",
+    "description": "",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "privacy-policy",
+    "name": "Privacy Policy",
+    "description": "",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  },
+  {
+    "policy_id": "data-protection-policy",
+    "name": "Data Protection Policy",
+    "description": "",
+    "compliance_mappings": [
+      {"SOC 2": [ ]},
+      {"HIPAA": [ ]},
+      {"ISO 27001": [ ]},
+      {"GDPR": [ ]}
+    ]
+  }
+
+]

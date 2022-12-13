@@ -1,5 +1,0 @@
-policies:
-  - name: ec2-security-group-default-vpc
-    resource: security-group
-    filters:
-      - default-vpc

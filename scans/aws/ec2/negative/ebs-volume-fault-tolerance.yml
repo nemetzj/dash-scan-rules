@@ -1,7 +1,0 @@
-policies:
-  - name: ebs-volume-fault-tolerance
-    description: EBS volume does not have a snapshot within the last 7 days
-    resource: ebs
-    filters:
-      - type: fault-tolerant
-        tolerant: False

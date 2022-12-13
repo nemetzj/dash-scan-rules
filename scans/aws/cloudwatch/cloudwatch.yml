@@ -1,3 +1,0 @@
-policies:
-  - name: GET-cloudwatch-alarm-get-all
-    resource: aws.alarm

@@ -1,6 +1,0 @@
-policies:
-  - name: rds-instance-upgrade-available
-    resource: rds
-    filters:
-      - type: upgrade-available
-        major: False

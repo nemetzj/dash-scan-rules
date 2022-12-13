@@ -1,5 +1,0 @@
-policies:
-  - name: redshift-cluster-publicly-assessible
-    resource: redshift
-    filters:
-      - PubliclyAccessible: true

@@ -1,8 +1,0 @@
-policies:
-  - name: redshift-cluster-ssl-not-required
-    resource: redshift
-    filters:
-      - type: param
-        key: require_ssl
-        value: false
-        op: eq
