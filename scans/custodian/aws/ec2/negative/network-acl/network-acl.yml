@@ -1,0 +1,3 @@
+policies:
+  - name: network-acl
+    resource: network-acl

@@ -1,0 +1,14 @@
+policies:
+  - name: ec2-port-5432-postgres-open-to-all
+    description: Port 5432 is open to all via security group ingress
+    resource: security-group
+    filters:
+      - or:
+          - type: ingress
+            Ports: [5432]
+            Cidr:
+              value: "0.0.0.0/0"
+          - type: ingress
+            Ports: [5432]
+            CidrV6:
+              value: "::/0"

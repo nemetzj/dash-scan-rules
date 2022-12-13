@@ -1,0 +1,12 @@
+policies:
+  - name: alb-uses-old-ssl-cipher
+    resource: app-elb
+    filters:
+      - type: listener
+        key: Protocol
+        value: HTTPS
+      - type: listener
+        key: SslPolicy
+        value: ['ELBSecurityPolicy-TLS-1-0-2015-04']
+        op: eq
+        matched: true

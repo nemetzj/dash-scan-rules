@@ -1,0 +1,3 @@
+policies:
+  - name: route53
+    resource: aws.rrset

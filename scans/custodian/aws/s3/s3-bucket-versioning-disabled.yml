@@ -1,0 +1,12 @@
+policies:
+  - name: s3-bucket-versioning-disabled
+    resource: s3
+    region: us-east-1
+    filters:
+      - or:
+          - type: value
+            key: Versioning.Status
+            value: Suspended
+          - type: value
+            key: Versioning.Status
+            value: absent

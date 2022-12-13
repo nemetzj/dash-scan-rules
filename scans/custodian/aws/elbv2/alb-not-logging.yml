@@ -1,0 +1,5 @@
+policies:
+  - name: alb-not-logging
+    resource: app-elb
+    filters:
+      - type: is-not-logging

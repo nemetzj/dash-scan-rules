@@ -1,0 +1,15 @@
+policies:
+- name: iam-user-old-inactive-access-keys
+  resource: iam-user
+  description: Finds all currently "inactive" IAM Access Keys that have not been removed from users access keys
+  filters:
+    - and:
+      - type: credential
+        key: access_keys.last_rotated
+        value_type: age
+        value: 120
+        op: greater-than
+      - type: credential
+        key: access_keys.active
+        value: false
+        op: eq

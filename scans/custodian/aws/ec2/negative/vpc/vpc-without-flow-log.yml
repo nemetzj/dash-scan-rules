@@ -1,0 +1,5 @@
+policies:
+  - name: vpc-without-flow-log
+    resource: vpc
+    filters:
+      - flow-logs

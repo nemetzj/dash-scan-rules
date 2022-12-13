@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74b32a7f-bc69-48f6-beb9-c64c12696431" name="Default Changelist" comment="" />
+    <list default="true" id="74b32a7f-bc69-48f6-beb9-c64c12696431" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,13 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state relative-caret-position="795">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -68,7 +75,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-no-snapshot-retention.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scans/aws/route53/route53.yml" />
         <option value="$PROJECT_DIR$/scans/aws/s3/s3-unencrypted-bucket-PASSING.yml" />
         <option value="$PROJECT_DIR$/scans/aws/s3/s3-bucket-access-logging-disabled.yml" />
@@ -118,6 +124,7 @@
         <option value="$PROJECT_DIR$/compliance-frameworks/soc2-trust-service-criteria-2017.json" />
         <option value="$PROJECT_DIR$/policies/policy-management-meta.json" />
         <option value="$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -241,7 +248,7 @@
       <workItem from="1670524165767" duration="13715000" />
       <workItem from="1670605554213" duration="9147000" />
       <workItem from="1670872994285" duration="7932000" />
-      <workItem from="1670974389820" duration="138000" />
+      <workItem from="1670974389820" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="Add redshift scans">
       <created>1670452027708</created>
@@ -292,17 +299,24 @@
       <option name="project" value="LOCAL" />
       <updated>1670974402790</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create new structure">
+      <created>1670974565394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670974565394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99966000" />
+    <option name="totallyTimeSpent" value="100071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-10" width="3072" height="1738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="958" y="261" width="836" height="1397" id="Project" order="0" sideWeight="0.49966776" visible="true" weight="0.24700399" />
+      <window_info active="true" content_ui="combo" x="958" y="261" width="836" height="1397" id="Project" order="0" sideWeight="0.49966776" visible="true" weight="0.24700399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="aws.explorer" order="3" sideWeight="0.50033224" side_tool="true" weight="0.24983542" />
@@ -352,16 +366,10 @@
     <MESSAGE value="Add draft scans" />
     <MESSAGE value="Added readme + new checks" />
     <MESSAGE value="draft metadata structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="draft metadata structure" />
+    <MESSAGE value="Create new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new structure" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/s3/s3-bucket-unencrypted-PASSING.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scans/custodian/aws/s3/s3-bucket-versioning-disabled.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -607,8 +615,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="795">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -618,6 +626,9 @@
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

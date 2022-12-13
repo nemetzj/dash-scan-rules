@@ -1,0 +1,10 @@
+policies:
+  - name: iam-root-mfa-disabled
+    resource: account
+    description: Verifies if MFA is enabled for root user and notifies if not
+    filters:
+      - type: iam-summary
+        key: AccountMFAEnabled
+        value: false
+        op: eq
+        value_type: swap

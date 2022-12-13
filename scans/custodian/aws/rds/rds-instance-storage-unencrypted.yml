@@ -1,0 +1,6 @@
+policies:
+  - name: rds-instance-storage-unencrypted
+    description: Find RDS instances where storage is not encrypted
+    resource: rds
+    filters:
+      - StorageEncrypted: false

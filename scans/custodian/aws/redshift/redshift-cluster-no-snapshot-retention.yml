@@ -1,0 +1,6 @@
+policies:
+  - name: redshift-cluster-no-snapshot-retention
+    description: Redshift has a automated snapshot retention period of 0
+    resource: redshift
+    filters:
+      - AutomatedSnapshotRetentionPeriod: 0
