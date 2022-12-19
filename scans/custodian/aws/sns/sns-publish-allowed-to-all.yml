@@ -1,0 +1,10 @@
+policies:
+  - name: sns-delete-allowed-to-all
+    resource: sns
+    # region: us-east-1
+    filters:
+      - type: has-statement
+        statements:
+          - Effect: Allow
+            Action: 'SNS:DeleteTopic'
+            #Principal: '*'

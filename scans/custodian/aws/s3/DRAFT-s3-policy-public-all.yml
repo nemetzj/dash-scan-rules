@@ -1,0 +1,9 @@
+policies:
+  - name: s3-public-policy
+    resource: s3
+    filters:
+      - type: has-statement
+        statements:
+          - Effect: Allow
+            Action: 's3:*'
+            Principal: '*'

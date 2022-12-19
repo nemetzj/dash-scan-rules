@@ -1,5 +1,5 @@
 policies:
-  - name: s3-bucket-public-block-acls
+  - name: s3-bucket-no-block-public-acls
     description: S3 buckets where public block of ACLs is not enabled - Permissions - s3:GetBucketPublicAccessBlock
     resource: s3
     region: us-east-1

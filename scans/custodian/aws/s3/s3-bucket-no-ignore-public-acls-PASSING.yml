@@ -1,0 +1,7 @@
+policies:
+  - name: s3-bucket-no-ignore-public-acls
+    resource: s3
+    region: us-east-1
+    filters:
+      - type: check-public-block
+        IgnorePublicAcls: true

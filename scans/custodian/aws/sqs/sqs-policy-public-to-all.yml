@@ -1,0 +1,5 @@
+policies:
+  - name: sqs-cross-account
+    resource: sqs
+    filters:
+      - type: cross-account
