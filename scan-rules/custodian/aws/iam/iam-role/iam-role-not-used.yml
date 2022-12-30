@@ -1,0 +1,7 @@
+policies:
+  - name: iam-role-not-used
+    description: Checks for usage on EC2, Lambda, ECS only - https://cloudcustodian.io/docs/aws/resources/iam-role.html#aws-iam-role-filters-used
+    resource: iam-role
+    filters:
+      - type: used
+        state: true

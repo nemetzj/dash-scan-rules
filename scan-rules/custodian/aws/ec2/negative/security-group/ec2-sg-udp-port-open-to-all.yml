@@ -1,0 +1,12 @@
+policies:
+  - name: ec2-sg-udp-port-open-to-all
+    description: UDP port open to all
+    resource: security-group
+    filters:
+      - or:
+          - type: ingress
+            IpProtocol: "udp"
+            Cidr: "0.0.0.0/0"
+          - type: ingress
+            IpProtocol: "udp"
+            CidrV6: "::/0"

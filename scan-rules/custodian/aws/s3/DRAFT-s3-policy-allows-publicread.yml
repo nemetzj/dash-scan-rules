@@ -1,0 +1,10 @@
+policies:
+  - name: s3-public-read
+    resource: s3
+    # region: us-east-1
+    filters:
+      - type: has-statement
+        statements:
+          - Effect: Allow
+            Action: 'AllowPublicRead'
+            Principal: '*'

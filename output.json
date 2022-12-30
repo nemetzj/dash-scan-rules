@@ -1,0 +1,3151 @@
+{
+  "scanParameters": {
+    "regions": [
+      "us-east-1",
+      "us-east-2"
+    ],
+    "tags": [],
+    "filters": []
+  },
+  "clientId": "client-id1",
+  "scanId": "ad113b25-807e-11ed-a759-7ba7cc89e73c",
+  "scanStart": "2022-12-20T15:55+00:00",
+  "scanEnd": "2022-12-20T15:56+00:00",
+  "scanEnvironment": {
+    "scanService": "cloudCustodian",
+    "cloudPlatform": "aws",
+    "accountId": "187515304745"
+  },
+  "policies": {
+    "multiple-tags-example": [
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake2-scanner",
+        "FunctionArn": "arn:aws:lambda:us-east-2:187515304745:function:c7n-aas-dash-poc-jake2-scanner",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake2-lambdaRole",
+        "Handler": "scanner.handler",
+        "CodeSize": 14380772,
+        "Description": "",
+        "Timeout": 120,
+        "MemorySize": 512,
+        "LastModified": "2022-12-13T16:00:39.052+0000",
+        "CodeSha256": "ce/gzxICZ4ID3kZrNGdMRqCmEHTas/8krjqPVfeAaUI=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "RESULTS_BUCKET": "c7n-aas-dash-poc-jake2-results",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "c314c322-150e-453b-975c-19f56ba634f1",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-2:187515304745:stack/c7n-aas-dash-poc-jake2/2a980b50-7aff-11ed-9454-0ab1fed34e32"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "ScannerLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-2"
+      },
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake2-runner",
+        "FunctionArn": "arn:aws:lambda:us-east-2:187515304745:function:c7n-aas-dash-poc-jake2-runner",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake2-lambdaRole",
+        "Handler": "runner.handler",
+        "CodeSize": 936,
+        "Description": "",
+        "Timeout": 29,
+        "MemorySize": 512,
+        "LastModified": "2022-12-13T16:02:04.032+0000",
+        "CodeSha256": "755QaLNMkXlz/CLivgmPWvWT1NPzEZMgfHQw1EA4JQc=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "SCAN_STATE_MACHINE_ARN": "arn:aws:states:us-east-2:187515304745:stateMachine:CloudCustodianScan",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "d9aac0c5-0dea-4a52-b238-60b2c455c387",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-2:187515304745:stack/c7n-aas-dash-poc-jake2/2a980b50-7aff-11ed-9454-0ab1fed34e32"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "RunnerLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-2"
+      },
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake2-aggregator",
+        "FunctionArn": "arn:aws:lambda:us-east-2:187515304745:function:c7n-aas-dash-poc-jake2-aggregator",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake2-lambdaRole",
+        "Handler": "aggregator.handler",
+        "CodeSize": 1313,
+        "Description": "",
+        "Timeout": 120,
+        "MemorySize": 512,
+        "LastModified": "2022-12-13T16:00:39.687+0000",
+        "CodeSha256": "DxKUCf8t9sQtuJJE/uuaMKx3eYW614yIP2LDRDkbAVU=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "RESULTS_BUCKET": "c7n-aas-dash-poc-jake2-results",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "ed1be9bb-8f92-4f81-8b65-9da307565333",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-2:187515304745:stack/c7n-aas-dash-poc-jake2/2a980b50-7aff-11ed-9454-0ab1fed34e32"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "AggregatorLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-2"
+      },
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake4-runner",
+        "FunctionArn": "arn:aws:lambda:us-east-1:187515304745:function:c7n-aas-dash-poc-jake4-runner",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake4-lambdaRole",
+        "Handler": "runner.handler",
+        "CodeSize": 936,
+        "Description": "",
+        "Timeout": 29,
+        "MemorySize": 512,
+        "LastModified": "2022-12-16T16:53:09.312+0000",
+        "CodeSha256": "755QaLNMkXlz/CLivgmPWvWT1NPzEZMgfHQw1EA4JQc=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "SCAN_STATE_MACHINE_ARN": "arn:aws:states:us-east-1:187515304745:stateMachine:CloudCustodianScan",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "8adee8ee-cc2c-46e2-b85d-16a00e480be9",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:187515304745:stack/c7n-aas-dash-poc-jake4/d05d2b60-7d61-11ed-ab82-0e1aae4374db"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "RunnerLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-1"
+      },
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake4-aggregator",
+        "FunctionArn": "arn:aws:lambda:us-east-1:187515304745:function:c7n-aas-dash-poc-jake4-aggregator",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake4-lambdaRole",
+        "Handler": "aggregator.handler",
+        "CodeSize": 1313,
+        "Description": "",
+        "Timeout": 120,
+        "MemorySize": 512,
+        "LastModified": "2022-12-16T16:52:03.996+0000",
+        "CodeSha256": "DxKUCf8t9sQtuJJE/uuaMKx3eYW614yIP2LDRDkbAVU=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "RESULTS_BUCKET": "c7n-aas-dash-poc-jake4-results",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "da01f880-1deb-4b3e-95eb-1748cd0f7591",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:187515304745:stack/c7n-aas-dash-poc-jake4/d05d2b60-7d61-11ed-ab82-0e1aae4374db"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "AggregatorLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-1"
+      },
+      {
+        "FunctionName": "c7n-aas-dash-poc-jake4-scanner",
+        "FunctionArn": "arn:aws:lambda:us-east-1:187515304745:function:c7n-aas-dash-poc-jake4-scanner",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::187515304745:role/c7n-aas-dash-poc-jake4-lambdaRole",
+        "Handler": "scanner.handler",
+        "CodeSize": 14380772,
+        "Description": "",
+        "Timeout": 120,
+        "MemorySize": 512,
+        "LastModified": "2022-12-16T16:52:05.602+0000",
+        "CodeSha256": "ce/gzxICZ4ID3kZrNGdMRqCmEHTas/8krjqPVfeAaUI=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "RESULTS_BUCKET": "c7n-aas-dash-poc-jake4-results",
+            "LOG_DISABLED": "false",
+            "LOG_LEVEL": "info"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "66ede706-82cd-4709-91f6-1ec81ec38888",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:187515304745:stack/c7n-aas-dash-poc-jake4/d05d2b60-7d61-11ed-ab82-0e1aae4374db"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "ScannerLambdaFunction"
+          }
+        ],
+        "c7n:MatchedFilters": [
+          "tag:Environment",
+          "tag:ResourceOwner"
+        ],
+        "Region": "us-east-1"
+      }
+    ],
+    "s3-unencrypted-bucket": [
+      {
+        "Name": "c7n-aas-dash-poc-jake2-results",
+        "CreationDate": "2022-12-13T15:59:57+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "ResultsBucket"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-2:187515304745:stack/c7n-aas-dash-poc-jake2/2a980b50-7aff-11ed-9454-0ab1fed34e32"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake2"
+          }
+        ],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "c7n-aas-dash-poc-jake4-results",
+        "CreationDate": "2022-12-16T16:51:15+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "c7n-aas-dash-poc-jake4"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "ResultsBucket"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:187515304745:stack/c7n-aas-dash-poc-jake4/d05d2b60-7d61-11ed-ab82-0e1aae4374db"
+          },
+          {
+            "Key": "STAGE",
+            "Value": "dash-poc-jake4"
+          }
+        ],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "cloudtrail-all-events-dev.dashsdk.com",
+        "CreationDate": "2019-02-03T19:34:26+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AWSCloudTrailAclCheck20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:GetBucketAcl\",\"Resource\":\"arn:aws:s3:::cloudtrail-all-events-dev.dashsdk.com\"},{\"Sid\":\"AWSCloudTrailWrite20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::cloudtrail-all-events-dev.dashsdk.com/AWSLogs/187515304745/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}}]}",
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-8383d6be-e751-44c5-8d80-4f11a6d7e40d-us-east-2",
+          "TargetPrefix": "logs/s3/logging_access/cloudtrail-all-events-dev.dashsdk.com"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "config-aws-us-west-1",
+        "CreationDate": "2022-01-12T12:34:59+00:00",
+        "Location": {
+          "LocationConstraint": "us-west-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "config-bucket-187515304745",
+        "CreationDate": "2020-06-11T20:19:00+00:00",
+        "Location": {
+          "LocationConstraint": "us-west-2"
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AWSConfigBucketPermissionsCheck\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"config.amazonaws.com\"},\"Action\":\"s3:GetBucketAcl\",\"Resource\":\"arn:aws:s3:::config-bucket-187515304745\"},{\"Sid\":\"AWSConfigBucketDelivery\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"config.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::config-bucket-187515304745/AWSLogs/187515304745/Config/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}}]}",
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-1387eb96-bc42-4329-a3d3-c01ace39ca68",
+        "CreationDate": "2019-12-04T12:08:14+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-2d6c3fea-cd61-4509-8038-4c7c3ee782cf",
+        "CreationDate": "2020-03-10T13:15:38+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-41934be0-1a79-454b-8a05-b39fe122a759",
+        "CreationDate": "2020-01-06T10:56:09+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-56cfc274-419c-4425-92a7-ddb4c05145be",
+        "CreationDate": "2019-12-12T09:52:27+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-55e9e5e5-f82c-435a-831e-5a4ceea8af52",
+        "CreationDate": "2020-06-22T23:23:47+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-5cd37110-2dfa-4b9e-8de7-305010b4d85a",
+        "CreationDate": "2020-06-04T11:44:20+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-5e71a4fe-3e31-4d08-b83c-1a7bfe059fa4",
+        "CreationDate": "2020-06-01T14:04:43+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-63235ef4-a4f3-40bb-9ecb-7890c8ed1ffd",
+        "CreationDate": "2020-01-07T11:14:23+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-6464ac69-9614-4f7f-a23b-525433b647f1-us-east-2",
+        "CreationDate": "2020-06-01T18:40:16+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-67433bbf-6bbd-470f-9e3a-22431bccf4f6",
+        "CreationDate": "2019-12-04T15:24:55+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-6c267c13-60eb-46ad-8d92-ff16c0e3e5e1",
+        "CreationDate": "2020-06-05T14:42:54+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-76b31323-7ebb-40dc-9e59-03ee5ddab467",
+        "CreationDate": "2019-11-18T16:04:17+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-83985195-092c-46e8-9cae-1b0a6b24fe02",
+        "CreationDate": "2020-07-07T15:34:47+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-88434c84-affc-4159-bbcb-20ffff27083a",
+        "CreationDate": "2020-07-06T13:49:55+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-899119aa-df54-419a-9684-236c2c2cc62d",
+        "CreationDate": "2020-06-03T10:27:12+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-9f391b32-793f-4980-9068-04f178c545b6",
+        "CreationDate": "2020-07-07T11:57:35+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-a118d78b-01fd-4b05-92f0-2f28ee4c8e3d",
+        "CreationDate": "2019-12-09T12:23:04+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-8383d6be-e751-44c5-8d80-4f11a6d7e40d-us-east-2",
+        "CreationDate": "2020-06-04T09:33:37+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b1288f91-bd47-4996-ab0d-b078c0d82569",
+        "CreationDate": "2020-01-14T18:31:45+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b4af9d2d-e6c8-468a-90a0-441d6ad5c609-us-west-1",
+        "CreationDate": "2020-06-11T12:26:20+00:00",
+        "Location": {
+          "LocationConstraint": "us-west-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-eu-central-1",
+        "CreationDate": "2019-12-12T13:55:40+00:00",
+        "Location": {
+          "LocationConstraint": "eu-central-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-fa07bbdb-1443-460b-99de-b8a763f7aa22-eu-central-1",
+          "TargetPrefix": "logs/s3/logging_access/dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-eu-central-1"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-eu-west-1",
+        "CreationDate": "2019-10-30T10:57:55+00:00",
+        "Location": {
+          "LocationConstraint": "eu-west-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "cf-templates-tzcyb3tqqk00-eu-west-1",
+          "TargetPrefix": ""
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-west-1",
+        "CreationDate": "2019-08-15T10:00:01+00:00",
+        "Location": {
+          "LocationConstraint": "us-west-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2",
+        "CreationDate": "2019-07-26T11:43:25+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2",
+          "TargetPrefix": "logs/s3/logging_access/dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-3322cfd8-2284-47e9-b038-473ca44e6246",
+        "CreationDate": "2022-07-20T15:04:07+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-west-2",
+        "CreationDate": "2019-12-12T13:55:35+00:00",
+        "Location": {
+          "LocationConstraint": "us-west-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-38af9f35-bb0e-418e-ba56-3e36810c1a1b",
+        "CreationDate": "2022-08-24T15:50:20+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-4ddb9d8c-7242-4ccc-8c3b-d08d0354aaa6",
+        "CreationDate": "2022-07-13T18:05:49+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-a02ddd77-bf59-4aaa-86a0-69856b4129c2",
+        "CreationDate": "2022-07-15T13:29:54+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-91e43918-cb71-44b8-a76e-38d9c3f393d2",
+        "CreationDate": "2022-07-13T15:32:19+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-backup-b1c219d7-d11f-4d82-83b6-51d5b3f59b0c",
+        "CreationDate": "2022-09-20T13:25:54+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-c888e78c-1faf-4eca-ab41-d9a6796578ab",
+        "CreationDate": "2020-06-25T13:05:22+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-d25258a9-1ffe-4a48-95a7-31ecb6483717",
+        "CreationDate": "2019-12-10T13:11:49+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-dfa13d5d-885f-4d95-b9b2-bdf6a434cd64",
+        "CreationDate": "2019-12-18T13:07:38+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-ed2b7576-036a-4d6f-9245-658ae1a15ed1",
+        "CreationDate": "2020-03-14T23:25:33+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-f6ab7d42-94b1-423f-a714-3fcea5c0b4f3",
+        "CreationDate": "2020-07-01T16:33:34+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-f946444d-814c-4539-b922-d9fd88870ceb",
+        "CreationDate": "2020-03-12T13:44:47+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-fa07bbdb-1443-460b-99de-b8a763f7aa22-eu-central-1",
+        "CreationDate": "2020-01-25T14:00:01+00:00",
+        "Location": {
+          "LocationConstraint": "eu-central-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-migrate-dev",
+        "CreationDate": "2022-09-16T15:56:22+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-rest-templates",
+        "CreationDate": "2019-03-21T15:55:44+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::452806217681:user/jenkins-prod-pipeline\"},\"Action\":[\"s3:GetObject\",\"s3:PutObject\",\"s3:PutObjectAcl\"],\"Resource\":\"arn:aws:s3:::dash-rest-templates/*\"}]}",
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+              },
+              "Permission": "READ"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-scan-role",
+        "CreationDate": "2020-07-06T14:25:59+00:00",
+        "Location": {
+          "LocationConstraint": "eu-west-1"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-fa07bbdb-1443-460b-99de-b8a763f7aa22-us-east-2",
+        "CreationDate": "2020-01-25T14:01:18+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-vrm",
+        "CreationDate": "2018-04-30T18:22:54+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "WRITE_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2",
+          "TargetPrefix": "logs/s3/logging_access/dash-vrm"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dashcore-dev-server",
+        "CreationDate": "2018-11-09T10:59:26+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2",
+          "TargetPrefix": "logs/s3/logging_access/dashcore-dev-server"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dashsdk-kics-scan-results-dev",
+        "CreationDate": "2022-09-09T09:35:36+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dashsdk-scanning",
+        "CreationDate": "2022-05-24T15:02:12+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "dash-standard-policies",
+        "CreationDate": "2018-01-30T01:33:53+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"AllowPublicRead\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::dash-standard-policies/*\"}]}",
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "WRITE"
+            },
+            {
+              "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+              },
+              "Permission": "READ_ACP"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "guardduty-findings-dash",
+        "CreationDate": "2020-03-24T23:16:17+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"Deny non-HTTPS access\",\"Effect\":\"Deny\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:*\",\"Resource\":\"arn:aws:s3:::guardduty-findings-dash/*\",\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}},{\"Sid\":\"Deny incorrect encryption header\",\"Effect\":\"Deny\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::guardduty-findings-dash/*\",\"Condition\":{\"StringNotEquals\":{\"s3:x-amz-server-side-encryption-aws-kms-key-id\":\"arn:aws:kms:us-east-1:187515304745:key/a74e3bf7-63f4-4c79-b210-19cb41364996\"}}},{\"Sid\":\"Deny unencrypted object uploads\",\"Effect\":\"Deny\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::guardduty-findings-dash/*\",\"Condition\":{\"StringNotEquals\":{\"s3:x-amz-server-side-encryption\":\"aws:kms\"}}},{\"Sid\":\"Allow PutObject\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::guardduty-findings-dash/*\"},{\"Sid\":\"Allow GetBucketLocation\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:GetBucketLocation\",\"Resource\":\"arn:aws:s3:::guardduty-findings-dash\"}]}",
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "jake-test-aws-cloudtrail-logs-187515304745-5a835044",
+        "CreationDate": "2022-12-05T20:14:32+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AWSCloudTrailAclCheck20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:GetBucketAcl\",\"Resource\":\"arn:aws:s3:::jake-test-aws-cloudtrail-logs-187515304745-5a835044\",\"Condition\":{\"StringEquals\":{\"AWS:SourceArn\":\"arn:aws:cloudtrail:us-east-1:187515304745:trail/jake-test-custodian\"}}},{\"Sid\":\"AWSCloudTrailWrite20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::jake-test-aws-cloudtrail-logs-187515304745-5a835044/AWSLogs/187515304745/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\",\"AWS:SourceArn\":\"arn:aws:cloudtrail:us-east-1:187515304745:trail/jake-test-custodian\"}}}]}",
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "jake-test-public-policy-all",
+        "CreationDate": "2022-12-16T23:57:26+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"Policy1671235097434\",\"Statement\":[{\"Sid\":\"Stmt1671235095036\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":\"arn:aws:s3:::jake-test-public-policy-all\"}]}",
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "kics-scanning-v3",
+        "CreationDate": "2022-03-04T09:29:03+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "public-demo-dash",
+        "CreationDate": "2020-08-12T20:33:08+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "s3bucket-kics-sandbox-vladk",
+        "CreationDate": "2022-03-28T10:35:10+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "test-backups-946",
+        "CreationDate": "2020-11-11T16:28:26+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "sentry-dashsdk",
+        "CreationDate": "2017-10-09T23:43:30+00:00",
+        "Location": {
+          "LocationConstraint": "us-east-2"
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {},
+        "Website": null,
+        "Logging": {
+          "TargetBucket": "dash-b86525c8-e252-41b3-90e2-2a9478ad58a0-us-east-2",
+          "TargetPrefix": "logs/s3/logging_access/sentry-dashsdk"
+        },
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      },
+      {
+        "Name": "upgradealextest",
+        "CreationDate": "2020-10-12T14:50:39+00:00",
+        "Location": {
+          "LocationConstraint": null
+        },
+        "Tags": [],
+        "Policy": null,
+        "Acl": {
+          "Owner": {
+            "DisplayName": "jacob",
+            "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83"
+          },
+          "Grants": [
+            {
+              "Grantee": {
+                "DisplayName": "jacob",
+                "ID": "d041568bc72060eb380ff0ff7b8961fd414c92f3ed0c0dbea22c6c45be475b83",
+                "Type": "CanonicalUser"
+              },
+              "Permission": "FULL_CONTROL"
+            }
+          ]
+        },
+        "Replication": null,
+        "Versioning": {
+          "Status": "Enabled"
+        },
+        "Website": null,
+        "Logging": {},
+        "Notification": {},
+        "Lifecycle": null,
+        "c7n:bucket-encryption": {},
+        "Region": "global"
+      }
+    ]
+  },
+  "summary": {
+    "numberScansRun": 2,
+    "numberScansWithFindings": 2,
+    "numberScansPassing": 0
+  }
+}

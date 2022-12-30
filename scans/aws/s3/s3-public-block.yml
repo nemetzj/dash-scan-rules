@@ -1,9 +1,0 @@
-policies:
-  - name: d-s3-bucket-public-access
-    description: S3 Bucket Public Access
-    resource: s3
-    region: us-east-1
-    filters:
-      - and:
-          - type: check-public-block
-          - RestrictPublicBuckets: unset
