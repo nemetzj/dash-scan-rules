@@ -1,0 +1,11 @@
+[
+  {
+    "mapping_type": "hipaa-security-rule",
+    "mapping_id": "TECH-1",
+    "name_id": "164.312(a)(1)",
+    "name": "Access Control",
+    "pointOfFocus": "",
+    "description": "",
+    "abstract_text": "This is the info from the compliance framework itself"
+  }
+]

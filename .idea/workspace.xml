@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74b32a7f-bc69-48f6-beb9-c64c12696431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/compliance-frameworks/gdpr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compliance-frameworks/hipaa-security-rule.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compliance-frameworks/soc2-trust-service-criteria-2017.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/scan_categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ebs-volume-fault-tolerance-meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes-meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scans/aws/ec2/postive/ec2-unencrypted-volumes-PASSING-meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/all_ec2_checks.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ebs-volume-fault-tolerance-PASSING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ebs-volume-fault-tolerance-PASSING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ebs-volume-fault-tolerance.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ebs-volume-fault-tolerance.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-ebs-unoptimized-PASSING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-ebs-unoptimized-PASSING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-ebs-unoptimized.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-ebs-unoptimized.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-111-nfs-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-111-nfs-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-1433-mssql-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-1433-mssql-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-1521-oracledb-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-1521-oracledb-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-20-ftp-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-20-ftp-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-2049-nfs-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-2049-nfs-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-21-ftp-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-21-ftp-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-22-ssh-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-22-ssh-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-23-telnet-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-23-telnet-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-25-smtp-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-25-smtp-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-27017-mongodb-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-27017-mongodb-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-27018-mongodb-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-27018-mongodb-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-3306-mysql-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-3306-mysql-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-3389-rdp-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-3389-rdp-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-53-dns-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-53-dns-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-5432-postgres-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-5432-postgres-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-port-587-smtp-open-to-all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-587-smtp-open-to-all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-security-group-default-vpc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-security-group-default-vpc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-stale-security-group.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-stale-security-group.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-unencrypted-volumes-PASSING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/postive/ec2-unencrypted-volumes-PASSING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-unencrypted-volumes-meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-unencrypted-volumes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/ec2-unused-security-group.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unused-security-group.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/network-acl/network-acl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/network-acl/network-acl.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scans/aws/ec2/vpc/vpc-without-flow-log.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scans/aws/ec2/negative/vpc/vpc-without-flow-log.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +15,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="795">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -87,18 +65,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="schema" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-logging-disabled.yml" />
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-publically-assessible.yml" />
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-ssl-not-required.yml" />
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-unencrypted.yml" />
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-version-upgrade-disabled.yml" />
-        <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-one-node.yml" />
         <option value="$PROJECT_DIR$/scans/aws/redshift/redshift-cluster-no-snapshot-retention.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scans/aws/route53/route53.yml" />
         <option value="$PROJECT_DIR$/scans/aws/s3/s3-unencrypted-bucket-PASSING.yml" />
         <option value="$PROJECT_DIR$/scans/aws/s3/s3-bucket-access-logging-disabled.yml" />
@@ -138,10 +114,17 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/scans/aws/ec2/ebs-volume-fault-tolerance-meta.json" />
         <option value="$PROJECT_DIR$/constants/scan_categories.json" />
-        <option value="$PROJECT_DIR$/compliance-frameworks/hipaa-security-rule.json" />
         <option value="$PROJECT_DIR$/scans/aws/ec2/ec2-unencrypted-volumes-meta.json" />
         <option value="$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes-meta.json" />
         <option value="$PROJECT_DIR$/scans/aws/ec2/postive/ec2-unencrypted-volumes-PASSING-meta.json" />
+        <option value="$PROJECT_DIR$/compliance-frameworks/hipaa-security-rule.json" />
+        <option value="$PROJECT_DIR$/rulesets/hipaa-all.json" />
+        <option value="$PROJECT_DIR$/rulesets/hipaa-all-passing.json" />
+        <option value="$PROJECT_DIR$/rulesets/hipaa/hipaa-all.json" />
+        <option value="$PROJECT_DIR$/compliance-frameworks/soc2-trust-service-criteria-2017.json" />
+        <option value="$PROJECT_DIR$/policies/policy-management-meta.json" />
+        <option value="$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -178,36 +161,25 @@
             <path>
               <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
               <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
+              <item name="rulesets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
               <item name="scans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
               <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
               <item name="scans" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
+              <item name="custodian" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
               <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
               <item name="scans" type="462c0819:PsiDirectoryNode" />
+              <item name="custodian" type="462c0819:PsiDirectoryNode" />
               <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="ec2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
-              <item name="scans" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="ec2" type="462c0819:PsiDirectoryNode" />
-              <item name="negative" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash-cloud-custodian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash-cloud-custodian" type="462c0819:PsiDirectoryNode" />
-              <item name="scans" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="ec2" type="462c0819:PsiDirectoryNode" />
-              <item name="postive" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,19 +195,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rulesets/hipaa" />
+      <recent name="$PROJECT_DIR$/scans/custodian" />
+      <recent name="$PROJECT_DIR$/scans/aws/ec2/postive" />
+      <recent name="$PROJECT_DIR$/scans/aws/ec2/negative" />
+      <recent name="$PROJECT_DIR$/scans/aws/account" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rulesets" />
       <recent name="$PROJECT_DIR$/scans/aws/ec2/postive" />
       <recent name="$PROJECT_DIR$/compliance-frameworks" />
       <recent name="$PROJECT_DIR$/constants" />
       <recent name="$PROJECT_DIR$/scans/aws/ec2" />
-      <recent name="$PROJECT_DIR$/scans/aws/ec2/network-acl" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scans/aws/ec2/postive" />
-      <recent name="$PROJECT_DIR$/scans/aws/ec2/negative" />
-      <recent name="$PROJECT_DIR$/scans/aws/account" />
-      <recent name="$PROJECT_DIR$/scans/aws" />
-      <recent name="$PROJECT_DIR$/scans/account_checks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,7 +246,9 @@
       <workItem from="1670269435116" duration="7758000" />
       <workItem from="1670346352988" duration="13226000" />
       <workItem from="1670524165767" duration="13715000" />
-      <workItem from="1670605554213" duration="9091000" />
+      <workItem from="1670605554213" duration="9147000" />
+      <workItem from="1670872994285" duration="7932000" />
+      <workItem from="1670974389820" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="Add redshift scans">
       <created>1670452027708</created>
@@ -304,17 +278,45 @@
       <option name="project" value="LOCAL" />
       <updated>1670542300252</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="draft metadata structure">
+      <created>1670628378018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670628378018</updated>
+    </task>
+    <task id="LOCAL-00006" summary="draft metadata structure">
+      <created>1670892724992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670892724992</updated>
+    </task>
+    <task id="LOCAL-00007" summary="draft metadata structure">
+      <created>1670974402790</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670974402790</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create new structure">
+      <created>1670974565394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670974565394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91840000" />
+    <option name="totallyTimeSpent" value="100071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-10" width="3072" height="1738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="958" y="261" width="836" height="1397" id="Project" order="0" sideWeight="0.49966776" visible="true" weight="0.24167776" />
+      <window_info active="true" content_ui="combo" x="958" y="261" width="836" height="1397" id="Project" order="0" sideWeight="0.49966776" visible="true" weight="0.24700399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="aws.explorer" order="3" sideWeight="0.50033224" side_tool="true" weight="0.24983542" />
@@ -326,7 +328,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956812" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.338206" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,39 +365,12 @@
     <MESSAGE value="Add redshift scans" />
     <MESSAGE value="Add draft scans" />
     <MESSAGE value="Added readme + new checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added readme + new checks" />
+    <MESSAGE value="draft metadata structure" />
+    <MESSAGE value="Create new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new structure" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scans/aws/sns/DRAFT-sns-public.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/useful-commands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/s3/s3-public-vlock.json" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/vpc/vpc-without-flow-log.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/s3/s3-bucket-unencrypted-PASSING.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/s3/s3-bucket-versioning-disabled.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/s3/s3-bucket-versioning-disabled.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
@@ -403,17 +378,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/aws/ec2/ec2-ingress-all-ports-open-to-all.yml" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-22-ssh-open-to-all.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-port-22-ssh-open-to-all.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/s3/s3-public-block.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/s3/s3-public-block.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/s3/DRAFT-s3-public-statements.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/s3/DRAFT-s3-public-statements.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="8" selection-end-column="50" />
@@ -424,13 +399,13 @@
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-old-access-key-inactive.yml" />
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/my-report/us-east-1/iam-user-stale-unused-password/resources.json" />
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/my-report/us-east-1/iam-root-mfa-disabled/resources.json" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/elbv2/alb-not-logging.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/elbv2/alb-not-logging.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/elb/elb-not-logging.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/elb/elb-not-logging.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/elbv2/alb-no-deletion-protection.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/elbv2/alb-no-deletion-protection.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
@@ -438,14 +413,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/aws/elb/my-report/us-east-1/elb-not-logging/resources.json" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/account/password-policy-length-too-short.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/account/password-policy-length-too-short.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-no-mfa.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-user-no-mfa.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -454,7 +429,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/my-report/us-east-1/password-policy-check/resources.json" />
     <entry file="file://$PROJECT_DIR$/scans/aws/account_checks/password-policy-check.yml" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/account/password-policy-reuse-enabled.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/account/password-policy-reuse-enabled.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -462,21 +437,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/my-report/us-east-1/console-login-detected/resources.json" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-old-password.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-user-old-password.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-root-mfa-disabled.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-root-mfa-disabled.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/account/password-policy-expiration-disabled.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/account/password-policy-expiration-disabled.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="43" />
@@ -484,69 +459,50 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scans/aws/iam/my-report/us-east-1/iam-user-old-access-keys/resources.json" />
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-root-active-access-keys.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-root-active-access-keys.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-stale-unused-password.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-user-stale-unused-password.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-old-active-access-keys.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-user-old-active-access-keys.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/iam-user-old-inactive-access-keys.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/iam-user-old-inactive-access-keys.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/iam/DRAFT-iam-console-login.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/iam/DRAFT-iam-console-login.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ec2-port-20-ftp-open-to-all.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-port-20-ftp-open-to-all.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/all_ec2_checks.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/network-acl/network-acl.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/network-acl/my-report/us-east-1/network-acl/resources.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/all_ec2_checks.yml" />
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/network-acl/my-report/us-east-1/network-acl/resources.json" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -557,34 +513,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/account/password-policy-all-checks.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/account/password-policy-all-checks.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/ebs-volume-fault-tolerance-meta.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ebs-volume-fault-tolerance-meta.json">
+    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/ebs-volume-fault-tolerance-meta.yml" />
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ebs-volume-fault-tolerance-meta.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants/aws_resource_types.json">
+    <entry file="file://$PROJECT_DIR$/constants/aws_resource_types.json" />
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/postive/ec2-unencrypted-volumes-PASSING.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="315">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants/scan_categories.json">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/postive/ec2-unencrypted-volumes-PASSING-meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state relative-caret-position="665">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -595,50 +550,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compliance-frameworks/soc2-trust-service-criteria-2017.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ebs-volume-fault-tolerance.yml">
+    <entry file="file://$PROJECT_DIR$/rulesets/hipaa/hipaa-all-passing.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="35">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ebs-volume-fault-tolerance.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/network-acl/network-acl.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compliance-frameworks/soc2-trust-service-criteria-2017.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants/scan_categories.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/compliance-frameworks/hipaa-security-rule.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="210">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/postive/ec2-unencrypted-volumes-PASSING-meta.json">
+    <entry file="file://$PROJECT_DIR$/policies/policy-management-meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="865">
+          <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/postive/ec2-unencrypted-volumes-PASSING.yml">
+    <entry file="file://$PROJECT_DIR$/rulesets/hipaa/hipaa-all.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="140">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes.yml">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/cloudwatch/cloudwatch-alarm-has-no-action.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="175">
+          <caret line="5" column="17" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scans/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes-meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="795">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scans/custodian/aws/ec2/negative/ec2-unencrypted-volumes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

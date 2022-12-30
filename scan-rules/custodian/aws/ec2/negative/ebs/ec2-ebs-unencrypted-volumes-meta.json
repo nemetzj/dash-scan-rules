@@ -38,7 +38,11 @@
   ],
   "related_policies": [
     {
-      "name": "Configuration Management Policy",
+      "id": "configuration-management-policy",
+      "policy_section": "1.1"
+    },
+    {
+      "id": "policy-management-policy",
       "policy_section": "1.1"
     }
   ]

@@ -1,0 +1,13 @@
+policies:
+  - name: iam-role-with-inline-policies-passrole
+    description: Filter IAM roles that have an inline-policy attached - https://cloudcustodian.io/docs/aws/resources/iam-role.html#has-inline-policy
+    resource: iam-role
+    filters:
+      - and:
+        - type: has-inline-policy
+          value: True
+        - type: value
+          key: "c7n:InlinePolicies"
+          op: in
+          value:
+            - "PassRolePolicy"

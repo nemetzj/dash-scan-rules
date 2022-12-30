@@ -1,5 +1,5 @@
 policies:
-  - name: s3-bucket-public-block-policy
+  - name: s3-bucket-no-block-public-policy
     description: S3 buckets where public access block is not enabled -Permissions - s3:GetBucketPublicAccessBlock
     resource: s3
     region: us-east-1
