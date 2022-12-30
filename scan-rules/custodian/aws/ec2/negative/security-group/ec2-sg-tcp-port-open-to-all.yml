@@ -1,0 +1,12 @@
+policies:
+  - name: ec2-sg-tcp-port-open-to-all
+    description: TCP port open to all
+    resource: security-group
+    filters:
+      - or:
+          - type: ingress
+            IpProtocol: "tcp"
+            Cidr: "0.0.0.0/0"
+          - type: ingress
+            IpProtocol: "tcp"
+            CidrV6: "::/0"
