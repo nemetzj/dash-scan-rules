@@ -7,7 +7,7 @@ import subprocess
 def custodian_validate_all():
     #myoutput = open('somefile.txt', 'w')
 
-    for root, dirs, files in os.walk("../scan-rules/custodian/aws/ec2", topdown=True): #TODO Change Directory Back
+    for root, dirs, files in os.walk("../scan-rules/custodian", topdown=True):
        for name in files:
             if name.endswith(".yml"):
                 command = 'custodian validate ' + os.path.join(root, name)
@@ -32,7 +32,7 @@ def custodian_validate_one(rule_name):
                     print("------------------------------------------")
                     print("Validating | " + command)
                     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
-                    
+
                     output, error = process.communicate()
 
 
