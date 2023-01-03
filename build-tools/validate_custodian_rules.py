@@ -23,15 +23,16 @@ def custodian_validate_all():
         # print(os.path.join(root, name))
 
 
-#Validate a single Cloudcustodian scan-rule for a given name (without .yml)
+#Validate a single Cloudcustodian scan-rule for a given name (with .yml)
 def custodian_validate_one(rule_name):
     for root, dirs, files in os.walk("../scan-rules/custodian", topdown=False):
            for name in files:
-                if name == rule_name + '.yml':
+                if name == rule_name:
                     command = 'custodian validate ' + os.path.join(root, name)
                     print("------------------------------------------")
                     print("Validating | " + command)
                     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+                    
                     output, error = process.communicate()
 
 
@@ -40,5 +41,5 @@ def custodian_validate_one(rule_name):
 
 #Run functions --------------------------------
 
-custodian_validate_all()
+#custodian_validate_all()
 #custodian_validate_one('ec2-ebs-unencrypted-volumes')

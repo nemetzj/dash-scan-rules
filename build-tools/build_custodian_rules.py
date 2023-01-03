@@ -4,17 +4,17 @@
 import os
 import yaml
 import json
-import pandas as pd
 
 import calendar
 import time
-from datetime import datetime  
+from datetime import datetime
 
 
 #Source for building all scans
 CUSTODIAN_SCAN_RULES_DIR = '../scan-rules/custodian/'
 
 #Artifact directories used for output
+TEMP_DIR = '../artifacts/temp/'
 CUSTODIAN_ARTIFACTS_DIR = '../artifacts/custodian/'
 CUSTODIAN_INDIVIDUAL_RULES_DIR = '../artifacts/custodian/rules/'
 
@@ -41,18 +41,22 @@ class custodian_rules:
                     #Add all cloudcustodian rules to array
                     scan_rules.append(custodian_rules(root, path, file, name))
 
+    # Get one yml rule from custodian directories
+    def getOne(rule):
+        for root, dirs, files in os.walk(CUSTODIAN_SCAN_RULES_DIR, topdown=True):
+           for file in files:
+                if file.endswith(rule):
+    
+                    path = os.path.join(root, file)
+                    name = file.replace(".yml", "")
+    
+                    #Add all cloudcustodian rules to array
+                    scan_rules.append(custodian_rules(root, path, file, name))
 
-class artifact_metrics:
-    def __init__(self, timestamp, artifact_date, number_rules):
-        self.timestamp = timestamp    
-        self.artifact_date = date_time    
-        self.number_custodian_rules = number_custodian_rules
 
 
 
-
-
-def convert_yaml_to_json(rule):
+def convert_yaml_to_json(rule, artifact):
     # Open YAML file
     with open(rule.path, 'r') as yml_data:
         configuration = yaml.safe_load(yml_data)
@@ -61,9 +65,25 @@ def convert_yaml_to_json(rule):
     json_file_name = rule.name + '.json'
     #print("JSON File: " + json_file_name)
 
-    # Convert to JSON
-    with open(CUSTODIAN_INDIVIDUAL_RULES_DIR + json_file_name, 'w') as json_data:
-        json.dump(configuration, json_data, indent=2) #Write to JSON file
+    if(artifact):
+        # Convert to JSON
+        with open(CUSTODIAN_INDIVIDUAL_RULES_DIR + json_file_name, 'w') as json_data:
+            json.dump(configuration, json_data, indent=2) #Write to JSON file
+
+        f = open(CUSTODIAN_INDIVIDUAL_RULES_DIR + json_file_name)
+        output_data = json.load(f)
+        return output_data
+
+    else:
+        with open(TEMP_DIR + json_file_name, 'w') as json_data:
+            json.dump(configuration, json_data, indent=2) #Write as temporary JSON file
+       
+        f = open(TEMP_DIR + json_file_name)
+        output_data = json.load(f)
+        print('JSON Data From Convert: ', output_data) #Remove temporary JSON file
+
+        return output_data
+
 
 
 
@@ -77,21 +97,17 @@ def trim_policy_json(rule, artifact):
     trimmed_json = data['policies'][0]
 
     if(artifact):
-        # Write trimmed JSON to existing JSON file output
-        f = open(CUSTODIAN_INDIVIDUAL_RULES_DIR + json_file_name, 'w')
-        json.dump(trimmed_json, f, indent=2)
+        write_json_file(trimmed_json, CUSTODIAN_INDIVIDUAL_RULES_DIR, json_file_name)
 
-        f.close()
 
     return trimmed_json
 
 
 
-## Create a combined JSON file with ALL custodian rules in artifacts
-def create_combined_policy_json():
+## Create a combined JSON array with ALL custodian rules
+def get_combined_policy_json(artifact):
     combined_json = []
-    # iterate over files in
-    # that directory
+    # iterate over files in that directory
     for filename in os.listdir(CUSTODIAN_INDIVIDUAL_RULES_DIR):
         f = os.path.join(CUSTODIAN_INDIVIDUAL_RULES_DIR, filename)
         # checking if it is a file
@@ -101,14 +117,20 @@ def create_combined_policy_json():
                 #combined_json.extend(json.load(infile))
                 #print(f)
 
-    with open(CUSTODIAN_ARTIFACTS_DIR + 'all-custodian-rules.json', 'w') as output_file:
-        json.dump(combined_json, output_file, indent=2)
+    if(artifact):
+        write_json_file(combined_json, CUSTODIAN_ARTIFACTS_DIR, 'all-custodian-rules.json')
+
     return combined_json
 
 
+def write_json_file(json_input, output_dir, output_file):
+    with open(output_dir + output_file, 'w') as output_file:
+        json.dump(json_input, output_file, indent=2)
 
-def create_metrics_json(combined_json):
-    metrics_array = []
+
+
+def create_metrics_json(combined_json, artifact):
+    metrics_obj = {}
 
     #Timestamp
     current_GMT = time.gmtime()
@@ -120,13 +142,14 @@ def create_metrics_json(combined_json):
 
 
     #Add to Results Array
-    metrics_array.append({"Timestamp": timestamp})
-    metrics_array.append({"ArtifactDate": date_time})
-    metrics_array.append({"Total Custodian Rules": len(combined_json)})
-    print(metrics_array)
+    metrics_obj["Timestamp"] = timestamp;
+    metrics_obj["ArtifactDate"] = date_time;
+    metrics_obj["Total Custodian Rules"] = len(combined_json);
 
-    with open(CUSTODIAN_ARTIFACTS_DIR + 'output-results.json', 'w') as output_file:
-        json.dump(metrics_array, output_file, indent=2)
+    if(artifact):
+        write_json_file(metrics_obj, CUSTODIAN_ARTIFACTS_DIR, 'output-results.json')
+
+    return metrics_obj
 
 
 
@@ -137,16 +160,27 @@ def build_all_cloudcustodian_rules():
 
     # Create JSON of all individual custodian rules
     for rule in scan_rules:
-        convert_yaml_to_json(rule)
-        trim_policy_json(rule, "true")
+        convert_yaml_to_json(rule, True)
+        trim_policy_json(rule, True)
 
     # Create combined JSON of custodian rules
-    combined_json = create_combined_policy_json()
-    create_metrics_json(combined_json)
-    #print(len(combined_json))
+    combined_json = get_combined_policy_json(True)
+
+    create_metrics_json(combined_json, True)
+
+
+# Create artifacts for all custodian rules
+#def create_request():
+#    custodian_rules.getOne('ec2-ebs-unencrypted-volumes')
+#
+#    # Create JSON of all individual custodian rules
+#    for rule in scan_rules:
+#        rule_json = convert_yaml_to_json(rule, False)
+#        trimmed_rule = trim_policy_json(rule_json, False)
+#                   print('Single Rule:')
 
 
 
 
-
-build_all_cloudcustodian_rules()
+#build_all_cloudcustodian_rules()
+#create_request()
