@@ -7,6 +7,7 @@
   "name": "Unencrypted EBS Volume",
   "description": "One or more EBS volumes is unencrypted",
   "recommendation": "Enable encryption for any unencrypted volumes",
+  "resource_type": "EBS",
 
   "urls": [
     {"name": "AWS Encryption Settings", "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html" },

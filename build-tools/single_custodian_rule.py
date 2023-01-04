@@ -143,11 +143,11 @@ def build_all_cloudcustodian_rules():
 
 
     # Create combined JSON of custodian rules
-    write_json_file(combined_json, ARTIFACT_DIR, "all-custodian-rules.json")
+    write_json_file(combined_json, ARTIFACT_DIR, "scan-rules.json")
 
     # Create JSON of metrics
     metrics_json = create_metrics_json(combined_json)
-    write_json_file(metrics_json, ARTIFACT_DIR, "output-results.json")
+    write_json_file(metrics_json, ARTIFACT_DIR, "output-info.json")
 
 
 
