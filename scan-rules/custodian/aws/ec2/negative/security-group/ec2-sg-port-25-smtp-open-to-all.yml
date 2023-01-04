@@ -1,5 +1,5 @@
 policies:
-    - name: ec2-port-25-smtp-open-to-all
+  - name: ec2-port-25-smtp-open-to-all
     description: Port 25 is open to all via security group ingress
     resource: security-group
     filters:

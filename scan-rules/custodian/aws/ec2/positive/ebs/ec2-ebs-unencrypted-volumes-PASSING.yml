@@ -1,0 +1,8 @@
+policies:
+  - name: ec2-find-unencrypted-volumes-PASSING
+    description: Get all encrypted EBS volumes
+    resource: aws.ebs
+    filters:
+      - type: value
+        key: Encrypted
+        value: true

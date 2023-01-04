@@ -1,5 +1,5 @@
 #Run custodian without actions using --dryrun (get resources). Much quicker command
-AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX custodian run --dryrun --region all --output-dir=./my-report ec2-unencrypted-volumes.yml
+AWS_ACCESS_KEY_ID="XXX" AWS_SECRET_ACCESS_KEY="XXX" custodian run --dryrun --region all --output-dir=./my-report ec2-unencrypted-volumes.yml
 
 
 

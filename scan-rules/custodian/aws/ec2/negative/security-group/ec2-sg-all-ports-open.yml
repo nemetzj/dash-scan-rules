@@ -9,8 +9,7 @@ policies:
           - type: ingress
             CidrV6: "::/0"
 
-policies:
-  - name: ec2-port-all-ports-open
+  - name: ec2-port-all-ports-open2
     description: All ports (0-65535) open to any other port
     resource: security-group
     filters:
