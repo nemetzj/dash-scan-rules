@@ -1,0 +1,8 @@
+policies:
+  - name: ec2-security-group-default-vpc-PASSING
+    resource: security-group
+    filters:
+      - type: value
+        key: "GroupName"
+        value: "default"
+        op: ne

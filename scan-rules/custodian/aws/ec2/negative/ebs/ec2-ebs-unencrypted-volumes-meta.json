@@ -19,9 +19,12 @@
     {"Volume Availability Zone": "AvailabilityZone"},
     {"Availability Zone": "AvailabilityZone"}
   ],
-  "categories": [
+  "security_categories": [
     "encryption",
     "another category"
+  ],
+  "security_sub_categories": [
+    "encryption-at-rest"
   ],
   "priority": [
     {"Default": "High"},
@@ -30,16 +33,10 @@
     {"ISO 27001": "Medium"},
     {"GDPR": "Medium"}
   ],
-  "compliance_mappings": [
-    {"SOC 2": [ "CC6.1", "CC6.2" ]},
-    {"HIPAA": [ "TECH-1", "TECH-2" ]},
-    {"ISO 27001": [ "ISO-1", "ISO-2" ]},
-    {"GDPR": [ "GDPR-1", "GDPR-2" ]}
-  ],
   "related_policies": [
     {
       "id": "configuration-management-policy",
-      "policy_section": "1.1"
+      "policy_section": "6.1"
     },
     {
       "id": "policy-management-policy",

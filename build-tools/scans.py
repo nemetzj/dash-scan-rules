@@ -1,8 +1,8 @@
 import typer
 
-from single_custodian_rule import send_lambda_request
+from single_custodian_rule import send_lambda_request, build_all_cloudcustodian_rules
 from validate_custodian_rules import custodian_validate_one, custodian_validate_all
-from build_custodian_rules import build_all_cloudcustodian_rules
+#from build_custodian_rules import build_all_cloudcustodian_rules
 
 app = typer.Typer()
 

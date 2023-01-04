@@ -1,0 +1,15 @@
+{
+  "entity": "HIPAA-1 (Access Control)",
+  "security_categories": [
+    "Access Control"
+  ],
+  "security_sub_categories": [
+    "Automatic Logoff"
+  ],
+  "security_controls": [
+    {
+      "type": "custodian",
+      "id": "iam_user_with_too-many_permissions"
+    }
+  ]
+}

@@ -84,23 +84,6 @@ def trim_policy_json(ruleJson):
 
 
 
-## Create a combined JSON array with ALL custodian rules
-def get_combined_policy_json():
-    combined_json = []
-    # iterate over files in that directory
-    for filename in os.listdir(CUSTODIAN_INDIVIDUAL_RULES_DIR):
-        f = os.path.join(CUSTODIAN_INDIVIDUAL_RULES_DIR, filename)
-        # checking if it is a file
-        if os.path.isfile(f):
-            with open(f, 'r') as infile:
-                combined_json.append(json.load(infile))
-                #combined_json.extend(json.load(infile))
-                #print(f)
-
-    return combined_json
-
-
-
 def create_metrics_json(combined_json):
     metrics_obj = {}
 
@@ -132,17 +115,34 @@ def write_json_file(json_input, output_dir, output_file):
 
 ## Create artifacts for all custodian rules
 def build_all_cloudcustodian_rules():
-    custodian_rules.getAll()
+    
+    #Timestamp
+    #current_GMT = time.gmtime()
+    #current_timestamp = calendar.timegm(current_GMT)
+    #ARTIFACT_DIR = CUSTODIAN_ARTIFACTS_DIR + current_timestamp
 
-    # Create JSON of all individual custodian rules
+    custodian_rules.getAll()
+    combined_json = []
+
+    # Process all individual custodian rules
     for rule in scan_rules:
         rule_json = convert_yaml_to_json(rule)
-        trimmed_json = trim_policy_json(rule)
+        trimmed_json = trim_policy_json(rule_json)
+        
+        # Create JSON of all individual custodian rules
+        individual_file_name = rule.name + '.json'
+        write_json_file(trimmed_json, CUSTODIAN_INDIVIDUAL_RULES_DIR, individual_file_name)
+
+        combined_json.append(trimmed_json)
+
 
     # Create combined JSON of custodian rules
-    combined_json = get_combined_policy_json()
+    write_json_file(combined_json, CUSTODIAN_ARTIFACTS_DIR, "all-custodian-rules.json")
 
+    # Create JSON of metrics
     metrics_json = create_metrics_json(combined_json)
+    write_json_file(metrics_json, CUSTODIAN_ARTIFACTS_DIR, "output-results.json")
+
 
 
 def send_lambda_request(scan_rule_file):
@@ -194,9 +194,3 @@ def send_lambda_request(scan_rule_file):
     print('Response: ', scanner_lambda_response)
     print('https://s3.console.aws.amazon.com/s3/buckets/c7n-aas-dash-poc-jake4-results?region=us-east-1&prefix=',scan_id,'/&showversions=false', sep='')
     print('===============================================')
-
-
-
-
-#build_all_cloudcustodian_rules()
-#send_lambda_request('ec2-ebs-unencrypted-volumes.yml')
