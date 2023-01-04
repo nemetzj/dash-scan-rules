@@ -15,7 +15,7 @@ CUSTODIAN_SCAN_RULES_DIR = '../scan-rules/custodian/'
 
 #Artifact directories used for output
 TEMP_DIR = '../artifacts/temp/'
-CUSTODIAN_ARTIFACTS_DIR = '../artifacts/custodian/'
+CUSTODIAN_ARTIFACTS_DIR = '../artifacts/'
 CUSTODIAN_INDIVIDUAL_RULES_DIR = '../artifacts/custodian/rules/'
 
 
@@ -116,12 +116,18 @@ def write_json_file(json_input, output_dir, output_file):
 ## Create artifacts for all custodian rules
 def build_all_cloudcustodian_rules():
     
-    #Timestamp
-    #current_GMT = time.gmtime()
-    #current_timestamp = calendar.timegm(current_GMT)
-    #ARTIFACT_DIR = CUSTODIAN_ARTIFACTS_DIR + current_timestamp
+    #Create timestamp
+    current_GMT = time.gmtime()
+    current_timestamp = calendar.timegm(current_GMT)
+    
+    #Make artifact directories
+    ARTIFACT_DIR = CUSTODIAN_ARTIFACTS_DIR + str(current_timestamp) + '/'
+    os.mkdir(ARTIFACT_DIR, 0o777)
+    ARTIFACT_RULES_DIR = ARTIFACT_DIR + 'rules/'
+    os.mkdir(ARTIFACT_RULES_DIR, 0o777)
 
     custodian_rules.getAll()
+
     combined_json = []
 
     # Process all individual custodian rules
@@ -131,17 +137,17 @@ def build_all_cloudcustodian_rules():
         
         # Create JSON of all individual custodian rules
         individual_file_name = rule.name + '.json'
-        write_json_file(trimmed_json, CUSTODIAN_INDIVIDUAL_RULES_DIR, individual_file_name)
+        write_json_file(trimmed_json, ARTIFACT_RULES_DIR, individual_file_name)
 
         combined_json.append(trimmed_json)
 
 
     # Create combined JSON of custodian rules
-    write_json_file(combined_json, CUSTODIAN_ARTIFACTS_DIR, "all-custodian-rules.json")
+    write_json_file(combined_json, ARTIFACT_DIR, "all-custodian-rules.json")
 
     # Create JSON of metrics
     metrics_json = create_metrics_json(combined_json)
-    write_json_file(metrics_json, CUSTODIAN_ARTIFACTS_DIR, "output-results.json")
+    write_json_file(metrics_json, ARTIFACT_DIR, "output-results.json")
 
 
 
