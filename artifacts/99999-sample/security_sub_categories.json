@@ -1,263 +1,984 @@
-Audit & Assurance - A&A
----------------------------------------------------------------
-Audit and Assurance Policy and Procedures
-Independent Assessments
-Risk Based Planning Assessment
-Requirements Compliance
-Audit Management Process
-Remediation
+[
+  {
+    "security_category_id": "A&A",
+    "name": "Audit and Assurance Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "A&A",
+    "name": "Independent Assessments",
+    "description": ""
+  },
+  {
+    "security_category_id": "A&A",
+    "name": "Risk Based Planning Assessment",
+    "description": ""
+  },
+  {
+    "security_category_id": "A&A",
+    "name": "Requirements Compliance",
+    "description": ""
+  },
+  {
+    "security_category_id": "A&A",
+    "name": "Audit Management Process",
+    "description": ""
+  },
+  {
+    "security_category_id": "A&A",
+    "name": "Remediation",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Application and Interface Security Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Application Security Baseline Requirements",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Application Security Metrics",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Secure Application Design and Development",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Automated Application Security Testing",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Automated Secure Application Deployment",
+    "description": ""
+  },
+  {
+    "security_category_id": "AIS",
+    "name": "Application Vulnerability Remediation",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Business Continuity Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Risk Assessment and Impact Analysis",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Business Continuity Strategy",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Business Continuity Planning",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Documentation",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Business Continuity Exercises",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Communication",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Backup",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Disaster Response Plan",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Response Plan Exercise",
+    "description": ""
+  },
+  {
+    "security_category_id": "BCR",
+    "name": "Equipment Redundancy",
+    "description": ""
+  },
 
 
-      Application & Interface Security - AIS
-      ---------------------------------------------------------------
-      Application and Interface Security Policy and Procedures
-      Application Security Baseline Requirements
-      Application Security Metrics
-      Secure Application Design and Development
-      Automated Application Security Testing
-      Automated Secure Application Deployment
-      Application Vulnerability Remediation
-
-
-Business Continuity Management and Operational Resilience - BCR
----------------------------------------------------------------
-Business Continuity Management Policy and Procedures
-Risk Assessment and Impact Analysis
-Business Continuity Strategy
-Business Continuity Planning
-Documentation
-Business Continuity Exercises
-Communication
-Backup
-Disaster Response Plan
-Response Plan Exercise
-Equipment Redundancy
-
-
-Change Control and Configuration Management - CCC
----------------------------------------------------------------
-Change Management Policy and Procedures
-Quality Testing
-Change Management Technology
-Unauthorized Change Protection
-Change Agreements
-Change Management Baseline
-Detection of Baseline Deviation
-Exception Management
-Change Restoration
-
-
-Cryptography, Encryption & Key Management - CEK
----------------------------------------------------------------
-Encryption and Key Management Policy and Procedures
-CEK Roles and Responsibilities
-Data Encryption
-Encryption Algorithm
-Encryption Change Management
-Encryption Change Cost Benefit Analysis
-Encryption Risk Management
-CSC Key Management Capability
-Encryption and Key Management Audit
-Key Generation
-Key Purpose
-Key Rotation
-Key Revocation
-Key Destruction
-Key Activation
-Key Suspension
-Key Deactivation
-Key Archival
-Key Compromise
-Key Recovery
-Key Inventory Management
-
-
-Datacenter Security - DCS
----------------------------------------------------------------
-Off-Site Equipment Disposal Policy and Procedures
-Off-Site Transfer Authorization Policy and Procedures
-Secure Area Policy and Procedures
-Secure Media Transportation Policy and Procedures
-Assets Classification
-Assets Cataloguing and Tracking
-Controlled Access Points
-Equipment Identification
-Secure Area Authorization
-Surveillance System
-Unauthorized Access Response Training
-Cabling Security
-Environmental Systems
-Secure Utilities
-Equipment Location
-
-
-Data Security and Privacy Lifecycle Management - DSP
----------------------------------------------------------------
-Security and Privacy Policy and Procedures
-Secure Disposal
-Data Inventory
-Data Classification
-Data Flow Documentation
-Data Ownership and Stewardship
-Data Protection by Design and Default
-Data Privacy by Design and Default
-Data Protection Impact Assessment
-Sensitive Data Transfer
-Personal Data Access, Reversal, Rectification and Deletion
-Limitation of Purpose in Personal Data Processing
-Personal Data Sub-processing
-Disclosure of Data Sub-processors
-Limitation of Production Data Use
-Data Retention and Deletion
-Sensitive Data Protection
-Disclosure Notification
-Data Location
-
-
-Governance, Risk and Compliance - GRC
----------------------------------------------------------------
-Governance Program Policy and Procedures
-Risk Management Program
-Organizational Policy Reviews
-Policy Exception Process
-Information Security Program
-Governance Responsibility Model
-Information System Regulatory Mapping
-Special Interest Groups
-
-
-    Human Resources - HRS
-    ---------------------------------------------------------------
-    Background Screening Policy and Procedures
-    Acceptable Use of Technology Policy and Procedures
-    Clean Desk Policy and Procedures
-    Remote and Home Working Policy and Procedures
-    Asset returns
-    Employment Termination
-    Employment Agreement Process
-    Employment Agreement Content
-    Personnel Roles and Responsibilities
-    Non-Disclosure Agreements
-    Security Awareness Training
-    Personal and Sensitive Data Awareness and Training
-    Compliance User Responsibility
-
-
-Identity & Access Management - IAM
----------------------------------------------------------------
-Identity and Access Management Policy and Procedures
-Strong Password Policy and Procedures
-Identity Inventory
-Separation of Duties
-Least Privilege
-User Access Provisioning
-User Access Changes and Revocation
-User Access Review
-Segregation of Privileged Access Roles
-Management of Privileged Access Roles
-CSCs Approval for Agreed Privileged Access Roles
-Safeguard Logs Integrity
-Uniquely Identifiable Users
-Strong Authentication
-Passwords Management
-Authorization Mechanisms
-
-
-Interoperability & Portability - IPY
----------------------------------------------------------------
-Interoperability and Portability Policy and Procedures
-Application Interface Availability
-Secure Interoperability and Portability Management
-Data Portability Contractual Obligations
-
-
-Infrastructure & Virtualization Security - IVS
----------------------------------------------------------------
-Infrastructure and Virtualization Security Policy and Procedures
-Capacity and Resource Planning
-Network Security
-OS Hardening and Base Controls
-Production and Non-Production Environments
-Segmentation and Segregation
-Migration to Cloud Environments
-Network Architecture Documentation
-Network Defense
-
-
-Logging and Monitoring - LOG
----------------------------------------------------------------
-Logging and Monitoring Policy and Procedures
-Audit Logs Protection
-Security Monitoring and Alerting
-Audit Logs Access and Accountability
-Audit Logs Monitoring and Response
-Clock Synchronization
-Logging Scope
-Log Records
-Log Protection
-Encryption Monitoring and Reporting
-Transaction/Activity Logging
-Access Control Logs
-Failures and Anomalies Reporting
-
-
-Security Incident Management, E-Discovery, & Cloud Forensics - SEF
----------------------------------------------------------------
-Security Incident Management Policy and Procedures
-Service Management Policy and Procedures
-Incident Response Plans
-Incident Response Testing
-Incident Response Metrics
-Event Triage Processes
-Security Breach Notification
-Points of Contact Maintenance
-
-
-    Supply Chain Management, Transparency, and Accountability - STA
-    ---------------------------------------------------------------
-    SSRM Policy and Procedures
-    SSRM Supply Chain
-    SSRM Guidance
-    SSRM Control Ownership
-    SSRM Documentation Review
-    SSRM Control Implementation
-    Supply Chain Inventory
-    Supply Chain Risk Management
-    Primary Service and Contractual Agreement
-    Supply Chain Agreement Review
-    Internal Compliance Testing
-    Supply Chain Service Agreement Compliance
-    Supply Chain Governance Review
-    Supply Chain Data Security Assessment
-
-
-Threat & Vulnerability Management - TVM
----------------------------------------------------------------
-Threat and Vulnerability Management Policy and Procedures
-Malware Protection Policy and Procedures
-Vulnerability Remediation Schedule
-Detection Updates
-External Library Vulnerabilities
-Penetration Testing
-Vulnerability Identification
-Vulnerability Prioritization
-Vulnerability Management Reporting
-Vulnerability Management Metrics
-
-
-Universal Endpoint Management - UEM
----------------------------------------------------------------
-Endpoint Devices Policy and Procedures
-Application and Service Approval
-Compatibility
-Endpoint Inventory
-Endpoint Management
-Automatic Lock Screen
-Operating Systems
-Storage Encryption
-Anti-Malware Detection and Prevention
-Software Firewall
-Data Loss Prevention
-Remote Locate
-Remote Wipe
-Third-Party Endpoint Security Posture
+  {
+    "security_category_id": "CCC",
+    "name": "Change Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Quality Testing",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Change Management Technology",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Unauthorized Change Protection",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Change Agreements",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Change Management Baseline",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Detection of Baseline Deviation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Exception Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "CCC",
+    "name": "Change Restoration",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption and Key Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "CEK Roles and Responsibilities",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Data Encryption",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption Algorithm",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption Change Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption Change Cost Benefit Analysis",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption Risk Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "CSC Key Management Capability",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Encryption and Key Management Audit",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Generation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Purpose",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Rotation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Revocation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Activation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Suspension",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Deactivation",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Archival",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Compromise",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Recovery",
+    "description": ""
+  },
+  {
+    "security_category_id": "CEK",
+    "name": "Key Inventory Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Off-Site Equipment Disposal Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Off-Site Transfer Authorization Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Secure Area Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Secure Media Transportation Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Assets Classification",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Assets Cataloguing and Tracking",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Controlled Access Points",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Equipment Identification",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Secure Area Authorization",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Surveillance System",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Unauthorized Access Response Training",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Cabling Security",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Environmental Systems",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Secure Utilities",
+    "description": ""
+  },
+  {
+    "security_category_id": "DCS",
+    "name": "Equipment Location",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Security and Privacy Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Secure Disposal",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Inventory",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Classification",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Flow Documentation",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Ownership and Stewardship",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Protection by Design and Default",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Privacy by Design and Default",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Protection Impact Assessment",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Sensitive Data Transfer",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Personal Data Access, Reversal, Rectification and Deletion",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Limitation of Purpose in Personal Data Processing",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Personal Data Sub-processing",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Disclosure of Data Sub-processors",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Limitation of Production Data Use",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Retention and Deletion",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Sensitive Data Protection",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Disclosure Notification",
+    "description": ""
+  },
+  {
+    "security_category_id": "DSP",
+    "name": "Data Location",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Governance Program Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Risk Management Program",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Organizational Policy Reviews",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Policy Exception Process",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Information Security Program",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Governance Responsibility Model",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Information System Regulatory Mapping",
+    "description": ""
+  },
+  {
+    "security_category_id": "GRC",
+    "name": "Special Interest Groups",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Background Screening Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Acceptable Use of Technology Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Clean Desk Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Remote and Home Working Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Asset returns",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Employment Termination",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Employment Agreement Process",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Employment Agreement Content",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Personnel Roles and Responsibilities",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Non-Disclosure Agreements",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Security Awareness Training",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Personal and Sensitive Data Awareness and Training",
+    "description": ""
+  },
+  {
+    "security_category_id": "HRS",
+    "name": "Compliance User Responsibility",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Identity and Access Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Strong Password Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Identity Inventory",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Separation of Duties",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Least Privilege",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "User Access Provisioning",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "User Access Changes and Revocation",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "User Access Review",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Segregation of Privileged Access Roles",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Management of Privileged Access Roles",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "CSCs Approval for Agreed Privileged Access Roles",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Safeguard Logs Integrity",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Uniquely Identifiable Users",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Strong Authentication",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Passwords Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "IAM",
+    "name": "Authorization Mechanisms",
+    "description": ""
+  },
+  {
+    "security_category_id": "IPY",
+    "name": "Interoperability and Portability Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "IPY",
+    "name": "Application Interface Availability",
+    "description": ""
+  },
+  {
+    "security_category_id": "IPY",
+    "name": "Secure Interoperability and Portability Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "IPY",
+    "name": "Data Portability Contractual Obligations",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Infrastructure and Virtualization Security Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Capacity and Resource Planning",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Network Security",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "OS Hardening and Base Controls",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Production and Non-Production Environments",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Segmentation and Segregation",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Migration to Cloud Environments",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Network Architecture Documentation",
+    "description": ""
+  },
+  {
+    "security_category_id": "IVS",
+    "name": "Network Defense",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Logging and Monitoring Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Audit Logs Protection",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Security Monitoring and Alerting",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Audit Logs Access and Accountability",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Audit Logs Monitoring and Response",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Clock Synchronization",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Logging Scope",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Log Records",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Log Protection",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Encryption Monitoring and Reporting",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Transaction/Activity Logging",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Access Control Logs",
+    "description": ""
+  },
+  {
+    "security_category_id": "LOG",
+    "name": "Failures and Anomalies Reporting",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Security Incident Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Service Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Incident Response Plans",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Incident Response Testing",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Incident Response Metrics",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Event Triage Processes",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Security Breach Notification",
+    "description": ""
+  },
+  {
+    "security_category_id": "SEF",
+    "name": "Points of Contact Maintenance",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Supply Chain",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Guidance",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Control Ownership",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Documentation Review",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "SSRM Control Implementation",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Inventory",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Risk Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Primary Service and Contractual Agreement",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Agreement Review",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Internal Compliance Testing",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Service Agreement Compliance",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Governance Review",
+    "description": ""
+  },
+  {
+    "security_category_id": "STA",
+    "name": "Supply Chain Data Security Assessment",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Threat and Vulnerability Management Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Malware Protection Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Vulnerability Remediation Schedule",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Detection Updates",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "External Library Vulnerabilities",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Penetration Testing",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Vulnerability Identification",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Vulnerability Prioritization",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Vulnerability Management Reporting",
+    "description": ""
+  },
+  {
+    "security_category_id": "TVM",
+    "name": "Vulnerability Management Metrics",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Endpoint Devices Policy and Procedures",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Application and Service Approval",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Compatibility",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Endpoint Inventory",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Endpoint Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Automatic Lock Screen",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Operating Systems",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Storage Encryption",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Anti-Malware Detection and Prevention",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Software Firewall",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Data Loss Prevention",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Remote Locate",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Remote Wipe",
+    "description": ""
+  },
+  {
+    "security_category_id": "UEM",
+    "name": "Third-Party Endpoint Security Posture",
+    "description": ""
+  }
+]

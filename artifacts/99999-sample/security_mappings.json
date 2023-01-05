@@ -1,0 +1,14 @@
+[
+  {
+      "entity_type": "custodian_rule",
+      "value": "ec2-unencrypted-volumes",
+      "entity2_type": "category",
+      "entity2_value": "encryption"
+  },
+  {
+      "entity_type": "custodian_rule",
+      "value": "ec2-unencrypted-volumes",
+      "entity2_type": "sub-category",
+      "entity2_value": "encryption-at-rest"
+  }
+]

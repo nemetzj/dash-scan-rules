@@ -1,0 +1,12 @@
+[
+  {
+      "entity_type": "custodian_rule",
+      "rule_id": "ec2-ebs-volume-fault-tolerance",
+      "scan_meta_id": "ec2-ebs-volume-fault-tolerance"
+  },
+  {
+      "entity_type": "custodian_rule",
+      "rule_id": "ec2-ebs-volume-fault-tolerance",
+      "scan_meta_id": "ec2-ebs-volume-fault-tolerance"
+  },
+]

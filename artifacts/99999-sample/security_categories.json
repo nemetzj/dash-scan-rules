@@ -1,52 +1,88 @@
 [
   {
-    "id": "access-control",
-    "name": "Access Control",
+    "id": "A&A",
+    "name": "Audit & Assurance - A&A",
     "description": ""
   },
   {
-    "id": "audit-logging",
-    "name": "Audit Logging",
+    "id": "AIS",
+    "name": "Application & Interface Security",
     "description": ""
   },
   {
-    "id": "availability",
-    "name": "Availability",
+    "id": "BCR",
+    "name": "Business Continuity Management and Operational Resilience",
     "description": ""
   },
   {
-    "id": "backup-dr",
-    "name": "Backup & Disaster Recovery (DR)",
+    "id": "CCC",
+    "name": "Change Control and Configuration Management",
     "description": ""
   },
   {
-    "id": "cost-savings",
-    "name": "Cost Optimization",
+    "id": "CEK",
+    "name": "Cryptography, Encryption & Key Management",
     "description": ""
   },
   {
-    "id": "data-integrity",
-    "name": "Data Integrity",
+    "id": "DCS",
+    "name": "Datacenter Security",
     "description": ""
   },
   {
-    "id": "encryption",
-    "name": "Encryption",
+    "id": "DSP",
+    "name": "Data Security and Privacy Lifecycle Management",
     "description": ""
   },
   {
-    "id": "maintenance",
-    "name": "Maintenance & Account Cleanup",
-    "description": "All rules, policies, and procedures related to maintaining the IT environment. This includes removing old/unused resources and replacing or removing old configurations"
-  },
-  {
-    "id": "networking",
-    "name": "Networking & Firewall",
+    "id": "GRC",
+    "name": "Governance, Risk and Compliance",
     "description": ""
   },
   {
-    "id": "patching",
-    "name": "Patches & Updates",
+    "id": "HRS",
+    "name": "Human Resources",
+    "description": ""
+  },
+  {
+    "id": "IAM",
+    "name": "Identity & Access Management",
+    "description": ""
+  },
+  {
+    "id": "IPY",
+    "name": "Interoperability & Portability",
+    "description": ""
+  },
+  {
+    "id": "IVS",
+    "name": "Infrastructure & Virtualization Security",
+    "description": ""
+  },
+  {
+    "id": "LOG",
+    "name": "Logging and Monitoring",
+    "description": ""
+  },
+  {
+    "id": "SEF",
+    "name": "Security Incident Management, E-Discovery, & Cloud Forensics - ",
+    "description": ""
+  },
+  {
+    "id": "STA",
+    "name": "Supply Chain Management, Transparency, and Accountability",
+    "description": ""
+  },
+  {
+    "id": "TVM",
+    "name": "Threat & Vulnerability Management",
+    "description": ""
+  },
+  {
+    "id": "UEM",
+    "name": "Universal Endpoint Management",
     "description": ""
   }
+
 ]
