@@ -16,13 +16,38 @@ CUSTODIAN_SCAN_RULES_DIR = '../scan-rules/custodian/'
 #Artifact directories used for output
 TEMP_DIR = '../artifacts/temp/'
 CUSTODIAN_ARTIFACTS_DIR = '../artifacts/'
-CUSTODIAN_INDIVIDUAL_RULES_DIR = '../artifacts/custodian/rules/'
-
-#Create timestamp
-#current_GMT = time.gmtime()
-#current_timestamp = calendar.timegm(current_GMT)
 
 scan_meta = []
+
+
+class artifact_set:
+    def __init__(self):
+        self.timestamp = self.create_timestamp()
+        self.artifact_dir = ''
+        self.rules_dir = ''
+        self.meta_dir = ''
+        
+    #Create timestamp
+    def create_timestamp(self):
+        current_GMT = time.gmtime()
+        current_timestamp = calendar.timegm(current_GMT)
+        return current_timestamp
+
+    #Create directories for artifacts
+    def create_directories(self):
+        ARTIFACT_DIR = CUSTODIAN_ARTIFACTS_DIR + str(self.timestamp) + '/'
+        os.mkdir(ARTIFACT_DIR, 0o777)
+
+        ARTIFACT_RULES_DIR = ARTIFACT_DIR + 'rules/'
+        os.mkdir(ARTIFACT_RULES_DIR, 0o777)
+
+        ARTIFACT_META_DIR = ARTIFACT_DIR + 'meta/'
+        os.mkdir(ARTIFACT_META_DIR, 0o777)
+
+        self.artifact_dir = ARTIFACT_DIR 
+        self.rules_dir = ARTIFACT_RULES_DIR
+        self.meta_dir = ARTIFACT_META_DIR
+        
 
 
 class custodian_meta:
@@ -31,9 +56,9 @@ class custodian_meta:
         fileInfo = self.getOne(filename)
 
         self.root = fileInfo["root"] # ../scan-rules/custodian/aws/ec2/negative/ebs
-        self.path = fileInfo["path"] # ../scan-rules/custodian/aws/ec2/negative/ebs/ec2-ebs-unoptimized.yml
-        self.file = fileInfo["file"] # ec2-ebs-unoptimized.yml
-        self.name = fileInfo["name"] # ec2-ebs-unoptimized
+        self.path = fileInfo["path"] # ../scan-rules/custodian/aws/ec2/negative/ebs/ec2-ebs-unoptimized-meta.json
+        self.file = fileInfo["file"] # ec2-ebs-unoptimized-meta.json
+        self.name = fileInfo["name"] # ec2-ebs-unoptimized-meta
         self.json = self.getJson()
 
 
@@ -73,7 +98,6 @@ class custodian_meta:
             "urls": meta_json["urls"],
             "key_fields": meta_json["key_fields"]
         }
-
         #print("==============================================")
         #print("New Meta JSON: ", formatted_meta_output)
 
@@ -91,35 +115,6 @@ class custodian_meta:
         }
         return formatted_meta_output
 
-
-class artifact_set:
-    def __init__(self):
-        self.timestamp = self.create_timestamp()
-        self.artifact_dir = ''
-        self.rules_dir = ''
-        self.meta_dir = ''
-        
-    #Create timestamp
-    def create_timestamp(self):
-        current_GMT = time.gmtime()
-        current_timestamp = calendar.timegm(current_GMT)
-        return current_timestamp
-
-    #Create directories for artifacts
-    def create_directories(self):
-        ARTIFACT_DIR = CUSTODIAN_ARTIFACTS_DIR + str(self.timestamp) + '/'
-        os.mkdir(ARTIFACT_DIR, 0o777)
-
-        ARTIFACT_RULES_DIR = ARTIFACT_DIR + 'rules/'
-        os.mkdir(ARTIFACT_RULES_DIR, 0o777)
-
-        ARTIFACT_META_DIR = ARTIFACT_DIR + 'meta/'
-        os.mkdir(ARTIFACT_META_DIR, 0o777)
-
-        self.artifact_dir = ARTIFACT_DIR 
-        self.rules_dir = ARTIFACT_RULES_DIR
-        self.meta_dir = ARTIFACT_META_DIR
-        
 
 
 #Get all metadata files for a given directory and sub-directories    
