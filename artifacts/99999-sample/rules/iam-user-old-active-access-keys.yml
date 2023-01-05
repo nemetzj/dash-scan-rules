@@ -1,0 +1,24 @@
+{
+  "name": "iam-user-old-active-access-keys",
+  "resource": "iam-user",
+  "description": "Finds all currently \"active\" IAM Access Keys that have not been changed in over 90 days and notifies",
+  "filters": [
+    {
+      "and": [
+        {
+          "type": "credential",
+          "key": "access_keys.last_rotated",
+          "value_type": "age",
+          "value": 90,
+          "op": "greater-than"
+        },
+        {
+          "type": "credential",
+          "key": "access_keys.active",
+          "value": true,
+          "op": "eq"
+        }
+      ]
+    }
+  ]
+}

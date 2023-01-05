@@ -1,0 +1,16 @@
+{
+  "name": "s3-public-read",
+  "resource": "s3",
+  "filters": [
+    {
+      "type": "has-statement",
+      "statements": [
+        {
+          "Effect": "Allow",
+          "Action": "AllowPublicRead",
+          "Principal": "*"
+        }
+      ]
+    }
+  ]
+}

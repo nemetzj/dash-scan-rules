@@ -1,0 +1,11 @@
+{
+  "name": "s3-bucket-no-restrict-public-buckets",
+  "resource": "s3",
+  "region": "us-east-1",
+  "filters": [
+    {
+      "type": "check-public-block",
+      "RestrictPublicBuckets": false
+    }
+  ]
+}

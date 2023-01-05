@@ -1,0 +1,11 @@
+{
+  "name": "cloudwatch-alarm-has-no-action",
+  "resource": "aws.alarm",
+  "filters": [
+    {
+      "type": "value",
+      "key": "ActionsEnabled",
+      "value": false
+    }
+  ]
+}

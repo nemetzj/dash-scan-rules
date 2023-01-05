@@ -1,0 +1,1640 @@
+[
+  {
+    "name": "ec2-ebs-unoptimized",
+    "description": "EBS volumes that are not optimized. Permissions Needed - ec2:DescribeInstanceAttribute",
+    "resource": "ec2",
+    "filters": [
+      {
+        "type": "instance-attribute",
+        "attribute": "ebsOptimized",
+        "key": "Value",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "ec2-find-unencrypted-volumes",
+    "description": "Get all unencrypted EBS volumes",
+    "resource": "aws.ebs",
+    "filters": [
+      {
+        "type": "value",
+        "key": "Encrypted",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "ebs-volume-fault-tolerance",
+    "description": "EBS volume does not have a snapshot within the last 7 days",
+    "resource": "ebs",
+    "filters": [
+      {
+        "type": "fault-tolerant",
+        "tolerant": false
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-22-ssh-open-to-all",
+    "description": "Port 22 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              22
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              22
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-27017-mongodb-open-to-all",
+    "description": "Port 27017 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              27017
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              27017
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-21-ftp-open-to-all",
+    "description": "Port 21 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              21
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              21
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-2049-nfs-open-to-all",
+    "description": "Port 111 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              2049
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              2049
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-25-smtp-open-to-all",
+    "description": "Port 25 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              25
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              25
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-unused-security-group",
+    "description": "VPC security groups that are not used",
+    "resource": "security-group",
+    "filters": [
+      "unused"
+    ]
+  },
+  {
+    "name": "ec2-port-1521-nfs-open-to-all",
+    "description": "Port 1521 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              1521
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              1521
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-23-telnet-open-to-all",
+    "description": "Port 23 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              23
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              23
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-20-ftp-open-to-all",
+    "description": "Port 20 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              20
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              20
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-27018-mongodb-open-to-all",
+    "description": "Port 27018 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              27018
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              27018
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-all-ports-open",
+    "description": "All ports (0-65535) open to any other port",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Cidr": "0.0.0.0/0"
+          },
+          {
+            "type": "ingress",
+            "CidrV6": "::/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-stale-security-group",
+    "description": "VPC security group(s) are stale - https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html",
+    "resource": "security-group",
+    "filters": [
+      "stale"
+    ]
+  },
+  {
+    "name": "ec2-port-all-ports-open-to-all",
+    "description": "All ports (0-65535) open to all",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "FromPort": 0,
+            "ToPort": 65535,
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "FromPort": 0,
+            "ToPort": 65535,
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-security-group-default-vpc",
+    "resource": "security-group",
+    "filters": [
+      "default-vpc"
+    ]
+  },
+  {
+    "name": "ec2-sg-tcp-port-open-to-all",
+    "description": "TCP port open to all",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "IpProtocol": "tcp",
+            "Cidr": "0.0.0.0/0"
+          },
+          {
+            "type": "ingress",
+            "IpProtocol": "tcp",
+            "CidrV6": "::/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-3389-rdp-open-to-all",
+    "description": "Port 3389 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              3389
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              3389
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-111-nfs-open-to-all",
+    "description": "Port 111 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              111
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              111
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-3306-mysql-open-to-all",
+    "description": "Port 3306 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              3306
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              3306
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-sg-udp-port-open-to-all",
+    "description": "UDP port open to all",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "IpProtocol": "udp",
+            "Cidr": "0.0.0.0/0"
+          },
+          {
+            "type": "ingress",
+            "IpProtocol": "udp",
+            "CidrV6": "::/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-587-smtp-open-to-all",
+    "description": "Port 587 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              587
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              587
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-53-ssh-open-to-all",
+    "description": "Port 53 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              53
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              53
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-1433-mssql-open-to-all",
+    "description": "Port 1433 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              1433
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              1433
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ec2-port-5432-postgres-open-to-all",
+    "description": "Port 5432 is open to all via security group ingress",
+    "resource": "security-group",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              5432
+            ],
+            "Cidr": {
+              "value": "0.0.0.0/0"
+            }
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              5432
+            ],
+            "CidrV6": {
+              "value": "::/0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "vpc-without-flow-log",
+    "resource": "vpc",
+    "filters": [
+      "flow-logs"
+    ]
+  },
+  {
+    "name": "network-acl",
+    "resource": "network-acl"
+  },
+  {
+    "name": "ebs-volume-fault-tolerance-PASSING",
+    "description": "EBS volume does not have a snapshot within the last 7 days",
+    "resource": "ebs",
+    "filters": [
+      {
+        "type": "fault-tolerant",
+        "tolerant": true
+      }
+    ]
+  },
+  {
+    "name": "ec2-find-unencrypted-volumes-PASSING",
+    "description": "Get all encrypted EBS volumes",
+    "resource": "aws.ebs",
+    "filters": [
+      {
+        "type": "value",
+        "key": "Encrypted",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "ec2-ebs-unoptimized-PASSING",
+    "description": "EBS volumes that are not optimized. Permissions Needed - ec2:DescribeInstanceAttribute",
+    "resource": "ec2",
+    "filters": [
+      {
+        "type": "instance-attribute",
+        "attribute": "ebsOptimized",
+        "key": "Value",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "ec2-find-unencrypted-volumes-PASSING",
+    "description": "Get all unencrypted EBS volumes",
+    "resource": "aws.ebs",
+    "filters": [
+      {
+        "type": "value",
+        "key": "Encrypted",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "ec2-security-group-default-vpc-PASSING",
+    "resource": "security-group",
+    "filters": [
+      {
+        "type": "value",
+        "key": "GroupName",
+        "value": "default",
+        "op": "ne"
+      }
+    ]
+  },
+  {
+    "name": "sns-cross-account",
+    "resource": "sns",
+    "filters": [
+      {
+        "and": [
+          {
+            "type": "cross-account",
+            "everyone_only": true
+          },
+          {
+            "type": "has-statement",
+            "statements": [
+              {
+                "Effect": "Allow",
+                "Action": "SNS:Subscribe",
+                "Principal": "AWS: *"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sns-delete-allowed-to-all",
+    "resource": "sns",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Action": "SNS:DeleteTopic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sns",
+    "resource": "sns"
+  },
+  {
+    "name": "route53",
+    "resource": "aws.rrset"
+  },
+  {
+    "name": "sqs-cross-account",
+    "resource": "sqs",
+    "filters": [
+      {
+        "type": "cross-account"
+      }
+    ]
+  },
+  {
+    "name": "elb-not-logging",
+    "resource": "elb",
+    "filters": [
+      {
+        "type": "is-not-logging"
+      }
+    ]
+  },
+  {
+    "name": "iam-root-active-access-keys",
+    "resource": "account",
+    "description": "Verifies root access keys don't exist anymore and notifies is they do",
+    "filters": [
+      {
+        "type": "iam-summary",
+        "key": "AccountAccessKeysPresent",
+        "value": true,
+        "op": "eq",
+        "value_type": "swap"
+      }
+    ]
+  },
+  {
+    "name": "iam-root-mfa-disabled",
+    "resource": "account",
+    "description": "Verifies if MFA is enabled for root user and notifies if not",
+    "filters": [
+      {
+        "type": "iam-summary",
+        "key": "AccountMFAEnabled",
+        "value": false,
+        "op": "eq",
+        "value_type": "swap"
+      }
+    ]
+  },
+  {
+    "name": "console-login-detected",
+    "resource": "account",
+    "mode": {
+      "type": "cloudtrail",
+      "events": [
+        "ConsoleLogin"
+      ]
+    }
+  },
+  {
+    "name": "iam-role-not-used",
+    "description": "Checks for usage on EC2, Lambda, ECS only - https://cloudcustodian.io/docs/aws/resources/iam-role.html#aws-iam-role-filters-used",
+    "resource": "iam-role",
+    "filters": [
+      {
+        "type": "used",
+        "state": true
+      }
+    ]
+  },
+  {
+    "name": "iam-role-with-inline-policies-passrole",
+    "description": "Filter IAM roles that have an inline-policy attached - https://cloudcustodian.io/docs/aws/resources/iam-role.html#has-inline-policy",
+    "resource": "iam-role",
+    "filters": [
+      {
+        "and": [
+          {
+            "type": "has-inline-policy",
+            "value": true
+          },
+          {
+            "type": "value",
+            "key": "c7n:InlinePolicies",
+            "op": "in",
+            "value": [
+              "PassRolePolicy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iam-role-with-inline-policies",
+    "description": "Filter IAM roles that have an inline-policy attached - https://cloudcustodian.io/docs/aws/resources/iam-role.html#has-inline-policy",
+    "resource": "iam-role",
+    "filters": [
+      {
+        "type": "has-inline-policy",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "iam-user-old-active-access-keys",
+    "resource": "iam-user",
+    "description": "Finds all currently \"active\" IAM Access Keys that have not been changed in over 90 days and notifies",
+    "filters": [
+      {
+        "and": [
+          {
+            "type": "credential",
+            "key": "access_keys.last_rotated",
+            "value_type": "age",
+            "value": 90,
+            "op": "greater-than"
+          },
+          {
+            "type": "credential",
+            "key": "access_keys.active",
+            "value": true,
+            "op": "eq"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iam-user-stale-unused-password",
+    "resource": "iam-user",
+    "description": "Finds all IAM Users that have not logged in for over 60 days and notifies",
+    "filters": [
+      {
+        "type": "credential",
+        "key": "password_last_used",
+        "value_type": "age",
+        "value": 60,
+        "op": "greater-than"
+      }
+    ]
+  },
+  {
+    "name": "iam-user-old-inactive-access-keys",
+    "resource": "iam-user",
+    "description": "Finds all currently \"inactive\" IAM Access Keys that have not been removed from users access keys",
+    "filters": [
+      {
+        "and": [
+          {
+            "type": "credential",
+            "key": "access_keys.last_rotated",
+            "value_type": "age",
+            "value": 120,
+            "op": "greater-than"
+          },
+          {
+            "type": "credential",
+            "key": "access_keys.active",
+            "value": false,
+            "op": "eq"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iam-users-with-active-keys",
+    "description": "Find iam users with access keys older than X days. Based on https://cloudcustodian.io/docs/aws/resources/iam-user.html#filters",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "access-key",
+        "key": "Status",
+        "value": "Active"
+      },
+      {
+        "type": "access-key",
+        "match-operator": "and",
+        "key": "CreateDate",
+        "value_type": "age",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "name": "iam-user-old-password",
+    "resource": "iam-user",
+    "description": "Finds all IAM User passwords that have not been changed in over 90 days",
+    "filters": [
+      {
+        "type": "credential",
+        "key": "password_last_changed",
+        "value_type": "age",
+        "value": 90,
+        "op": "greater-than"
+      }
+    ]
+  },
+  {
+    "name": "iam-user-no-mfa",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "credential",
+        "key": "mfa_active",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "iam-policy",
+    "resource": "iam-policy",
+    "filters": [
+      {
+        "type": "used"
+      }
+    ]
+  },
+  {
+    "name": "iam-group-with-inline-policies",
+    "description": "Filter IAM groups that have an inline-policy - https://cloudcustodian.io/docs/aws/resources/iam-group.html#has-inline-policy",
+    "resource": "iam-group",
+    "filters": [
+      {
+        "type": "has-inline-policy",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-versioning-disabled",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "value",
+            "key": "Versioning.Status",
+            "value": "Suspended"
+          },
+          {
+            "type": "value",
+            "key": "Versioning.Status",
+            "value": "absent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-policy-public-to-all",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "cross-account",
+        "everyone_only": true
+      }
+    ]
+  },
+  {
+    "name": "s3-policy-has-global-grants",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "global-grants"
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-ignore-public-acls",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "IgnorePublicAcls": true
+      }
+    ]
+  },
+  {
+    "name": "s3-allows-all-getobject",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Principal": "\"AWS\": \"*\""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-ignore-public-acls",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "IgnorePublicAcls": false
+      }
+    ]
+  },
+  {
+    "name": "s3-public-policy",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Principal": "*"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3",
+    "resource": "s3",
+    "region": "us-east-1"
+  },
+  {
+    "name": "s3-bucket-no-block-public-policy",
+    "description": "S3 buckets where public access block is not enabled -Permissions - s3:GetBucketPublicAccessBlock",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "BlockPublicPolicy": false
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-block-public-policy-PASSING",
+    "description": "S3 buckets where public access block is not enabled -Permissions - s3:GetBucketPublicAccessBlock",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "BlockPublicPolicy": true
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-unencrypted",
+    "description": "Get unencrypted S3 buckets - Permissions - s3:GetEncryptionConfiguration,",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "bucket-encryption",
+        "state": false
+      }
+    ]
+  },
+  {
+    "name": "s3-allow",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "d-s3-bucket-public-access",
+    "description": "S3 Bucket Public Access",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "and": [
+          {
+            "type": "check-public-block"
+          },
+          {
+            "tag:__Exception-S3PublicAccess": "absent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-public-policy",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Principal": "*"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-iam-analyzer",
+    "resource": "aws.s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "iam-analyzer",
+        "key": "isPublic",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "s3-public-read",
+    "resource": "s3",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Action": "AllowPublicRead",
+            "Principal": "*"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-restrict-public-buckets",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "RestrictPublicBuckets": true
+      }
+    ]
+  },
+  {
+    "name": "s3-public-read",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "has-statement",
+        "statements": [
+          {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-public-block-acls-PASSING",
+    "description": "S3 buckets where public block of ACLs is not enabled - Permissions - s3:GetBucketPublicAccessBlock",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "BlockPublicAcls": true
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-restrict-public-buckets",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "RestrictPublicBuckets": false
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-unencrypted-PASSING",
+    "description": "Get unencrypted S3 buckets - Permissions - s3:GetEncryptionConfiguration,",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "bucket-encryption",
+        "state": true
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-no-block-public-acls",
+    "description": "S3 buckets where public block of ACLs is not enabled - Permissions - s3:GetBucketPublicAccessBlock",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "check-public-block",
+        "BlockPublicAcls": false
+      }
+    ]
+  },
+  {
+    "name": "s3-bucket-logging-disabled",
+    "resource": "s3",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "bucket-logging",
+        "op": "disabled"
+      }
+    ]
+  },
+  {
+    "name": "password-policy-reuse-enabled",
+    "resource": "account",
+    "description": "Verifies password policy on account meets our requirements and notifies if not",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "password-policy",
+        "key": "PasswordReusePrevention",
+        "value": 2,
+        "op": "lt"
+      }
+    ]
+  },
+  {
+    "name": "password-policy-expiration-disabled",
+    "resource": "account",
+    "description": "Password polciy does not expire passwords",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "password-policy",
+            "key": "ExpirePasswords",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "HardExpiry",
+            "value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "password-policy-all-checks",
+    "resource": "account",
+    "description": "Verifies password policy on account meets our requirements and notifies if not",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "password-policy",
+            "key": "MinimumPasswordLength",
+            "value": 14,
+            "op": "lt"
+          },
+          {
+            "type": "password-policy",
+            "key": "RequireSymbols",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "RequireNumbers",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "RequireUppercaseCharacters",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "RequireLowercaseCharacters",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "PasswordReusePrevention",
+            "value": 2,
+            "op": "lt"
+          },
+          {
+            "type": "password-policy",
+            "key": "MaxPasswordAge",
+            "value": 90,
+            "op": "lt"
+          },
+          {
+            "type": "password-policy",
+            "key": "ExpirePasswords",
+            "value": false
+          },
+          {
+            "type": "password-policy",
+            "key": "HardExpiry",
+            "value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "password-policy-length-too-short",
+    "resource": "account",
+    "description": "Verifies password policy on account meets our requirements and notifies if not",
+    "region": "us-east-1",
+    "filters": [
+      {
+        "type": "password-policy",
+        "key": "MinimumPasswordLength",
+        "value": 14,
+        "op": "lt"
+      }
+    ]
+  },
+  {
+    "name": "alb-no-deletion-protection",
+    "resource": "app-elb",
+    "filters": [
+      {
+        "type": "attributes",
+        "key": "deletion_protection.enabled",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "alb-uses-old-ssl-cipher",
+    "resource": "app-elb",
+    "filters": [
+      {
+        "type": "listener",
+        "key": "Protocol",
+        "value": "HTTPS"
+      },
+      {
+        "type": "listener",
+        "key": "SslPolicy",
+        "value": [
+          "ELBSecurityPolicy-TLS-1-0-2015-04"
+        ],
+        "op": "eq",
+        "matched": true
+      }
+    ]
+  },
+  {
+    "name": "alb-not-logging",
+    "resource": "app-elb",
+    "filters": [
+      {
+        "type": "is-not-logging"
+      }
+    ]
+  },
+  {
+    "name": "rds",
+    "resource": "aws.redshift"
+  },
+  {
+    "name": "redshift-cluster-version-upgrade-disabled",
+    "resource": "redshift",
+    "filters": [
+      {
+        "AllowVersionUpgrade": false
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-ssl-not-required",
+    "resource": "redshift",
+    "filters": [
+      {
+        "type": "param",
+        "key": "require_ssl",
+        "value": false,
+        "op": "eq"
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-no-snapshot-retention",
+    "description": "Redshift has a automated snapshot retention period of 0",
+    "resource": "redshift",
+    "filters": [
+      {
+        "AutomatedSnapshotRetentionPeriod": 0
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-unencrypted",
+    "resource": "redshift",
+    "filters": [
+      {
+        "Encrypted": false
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-publicly-assessible",
+    "resource": "redshift",
+    "filters": [
+      {
+        "PubliclyAccessible": true
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-logging-disabled",
+    "resource": "redshift",
+    "filters": [
+      {
+        "type": "logging",
+        "key": "LoggingEnabled",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "redshift-cluster-one-node",
+    "description": "Redshift cluster has only 1 single node in the cluster",
+    "resource": "redshift",
+    "filters": [
+      {
+        "NumberOfNodes": 1
+      }
+    ]
+  },
+  {
+    "name": "cloudtrail-logging-disabled",
+    "resource": "aws.cloudtrail",
+    "filters": [
+      {
+        "type": "status",
+        "key": "IsLogging",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "cloudtrail-global-service-events-disabled",
+    "resource": "aws.cloudtrail",
+    "filters": [
+      {
+        "type": "value",
+        "key": "IncludeGlobalServiceEvents",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "cloudtrail-log-file-validation-disabled",
+    "resource": "aws.cloudtrail",
+    "filters": [
+      {
+        "type": "value",
+        "key": "LogFileValidationEnabled",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "cloudwatch-alarm-has-no-action",
+    "resource": "aws.alarm",
+    "filters": [
+      {
+        "type": "value",
+        "key": "ActionsEnabled",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "GET-cloudwatch-alarm-get-all",
+    "resource": "aws.alarm"
+  },
+  {
+    "name": "cloudwatch-alarm-insufficient-data",
+    "resource": "aws.alarm",
+    "filters": [
+      {
+        "type": "value",
+        "value_type": "age",
+        "key": "StateUpdatedTimestamp",
+        "value": 30,
+        "op": "ge"
+      },
+      {
+        "StateValue": "INSUFFICIENT_DATA"
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-upgrade-available",
+    "resource": "rds",
+    "filters": [
+      {
+        "type": "upgrade-available",
+        "major": false
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-backup-disabled",
+    "resource": "rds",
+    "filters": [
+      {
+        "type": "value",
+        "key": "BackupRetentionPeriod",
+        "value": 0,
+        "op": "eq"
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-autoupdate-disabled-PASSING",
+    "description": "Find RDS instances where auto minor version upgrade in not enabled",
+    "resource": "rds",
+    "filters": [
+      {
+        "AutoMinorVersionUpgrade": true
+      }
+    ]
+  },
+  {
+    "name": "rds",
+    "resource": "aws.rds"
+  },
+  {
+    "name": "rds-instance-deletion-protection-disabled",
+    "resource": "rds",
+    "filters": [
+      {
+        "DeletionProtection": false
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-not-multi-az",
+    "description": "RDS instance is not configured as multi-availability zone setup.",
+    "resource": "rds",
+    "filters": [
+      {
+        "MultiAZ": false
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-storage-unencrypted",
+    "description": "Find RDS instances where storage is not encrypted",
+    "resource": "rds",
+    "filters": [
+      {
+        "StorageEncrypted": false
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-autoupdate-disabled",
+    "description": "Find RDS instances where auto minor version upgrade in not enabled",
+    "resource": "rds",
+    "filters": [
+      {
+        "AutoMinorVersionUpgrade": false
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-short-backup-retention",
+    "resource": "rds",
+    "filters": [
+      {
+        "type": "value",
+        "key": "BackupRetentionPeriod",
+        "value": 7,
+        "op": "lt"
+      }
+    ]
+  },
+  {
+    "name": "rds-instance-public-accessibility",
+    "resource": "rds",
+    "filters": [
+      {
+        "PubliclyAccessible": true
+      }
+    ]
+  }
+]

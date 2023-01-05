@@ -1,0 +1,10 @@
+{
+  "name": "rds-instance-autoupdate-disabled",
+  "description": "Find RDS instances where auto minor version upgrade in not enabled",
+  "resource": "rds",
+  "filters": [
+    {
+      "AutoMinorVersionUpgrade": false
+    }
+  ]
+}

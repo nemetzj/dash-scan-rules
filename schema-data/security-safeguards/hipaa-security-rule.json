@@ -7,5 +7,14 @@
     "pointOfFocus": "",
     "description": "",
     "abstract_text": "This is the info from the compliance framework itself"
+  },
+  {
+    "mapping_type": "hipaa-security-rule",
+    "mapping_id": "TECH-2",
+    "name_id": "164.312(a)(2)",
+    "name": "",
+    "pointOfFocus": "",
+    "description": "",
+    "abstract_text": "This is the info from the compliance framework itself"
   }
 ]

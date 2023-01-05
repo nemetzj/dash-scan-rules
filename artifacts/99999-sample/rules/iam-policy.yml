@@ -1,0 +1,9 @@
+{
+  "name": "iam-policy",
+  "resource": "iam-policy",
+  "filters": [
+    {
+      "type": "used"
+    }
+  ]
+}

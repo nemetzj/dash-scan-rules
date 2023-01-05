@@ -235,6 +235,7 @@ def build_all_custodian_artifacts():
     # Create Meta Artifacts
     ## =====================================================================
     meta_combined_json = []
+    meta_control_combined_json = []
 
     file_list = get_all_meta_filenames(CUSTODIAN_SCAN_RULES_DIR)
     for file in file_list:
@@ -243,10 +244,17 @@ def build_all_custodian_artifacts():
         metaArtifact = meta.createMetaFile()
         meta_combined_json.append(metaArtifact) # Add to combined JSON
         #print("metaArtifact:", metaArtifact)
+
+        metaControlArtifact = meta.createMetaControl()
+        meta_control_combined_json.append(metaControlArtifact)
+
         write_json_file(metaArtifact, artifacts.meta_dir , meta.file)
+        #write_json_file(metaControlArtifact, artifacts.meta_condir , meta.file)
 
     #Write meta combined json
     write_json_file(meta_combined_json, artifacts.artifact_dir , 'scan_meta.json') 
+    write_json_file(meta_control_combined_json, artifacts.artifact_dir , 'scan_controls.json') 
+
 
 
 

@@ -1,0 +1,15 @@
+{
+  "name": "sns-delete-allowed-to-all",
+  "resource": "sns",
+  "filters": [
+    {
+      "type": "has-statement",
+      "statements": [
+        {
+          "Effect": "Allow",
+          "Action": "SNS:DeleteTopic"
+        }
+      ]
+    }
+  ]
+}

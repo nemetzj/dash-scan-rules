@@ -1,0 +1,16 @@
+{
+  "name": "s3-allows-all-getobject",
+  "resource": "s3",
+  "filters": [
+    {
+      "type": "has-statement",
+      "statements": [
+        {
+          "Effect": "Allow",
+          "Action": "s3:GetObject",
+          "Principal": "\"AWS\": \"*\""
+        }
+      ]
+    }
+  ]
+}

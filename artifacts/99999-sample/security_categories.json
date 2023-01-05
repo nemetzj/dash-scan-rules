@@ -1,0 +1,52 @@
+[
+  {
+    "id": "access-control",
+    "name": "Access Control",
+    "description": ""
+  },
+  {
+    "id": "audit-logging",
+    "name": "Audit Logging",
+    "description": ""
+  },
+  {
+    "id": "availability",
+    "name": "Availability",
+    "description": ""
+  },
+  {
+    "id": "backup-dr",
+    "name": "Backup & Disaster Recovery (DR)",
+    "description": ""
+  },
+  {
+    "id": "cost-savings",
+    "name": "Cost Optimization",
+    "description": ""
+  },
+  {
+    "id": "data-integrity",
+    "name": "Data Integrity",
+    "description": ""
+  },
+  {
+    "id": "encryption",
+    "name": "Encryption",
+    "description": ""
+  },
+  {
+    "id": "maintenance",
+    "name": "Maintenance & Account Cleanup",
+    "description": "All rules, policies, and procedures related to maintaining the IT environment. This includes removing old/unused resources and replacing or removing old configurations"
+  },
+  {
+    "id": "networking",
+    "name": "Networking & Firewall",
+    "description": ""
+  },
+  {
+    "id": "patching",
+    "name": "Patches & Updates",
+    "description": ""
+  }
+]

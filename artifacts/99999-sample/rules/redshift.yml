@@ -1,0 +1,4 @@
+{
+  "name": "rds",
+  "resource": "aws.redshift"
+}

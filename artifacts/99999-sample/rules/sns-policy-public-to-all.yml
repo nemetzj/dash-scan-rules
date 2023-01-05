@@ -1,0 +1,24 @@
+{
+  "name": "sns-cross-account",
+  "resource": "sns",
+  "filters": [
+    {
+      "and": [
+        {
+          "type": "cross-account",
+          "everyone_only": true
+        },
+        {
+          "type": "has-statement",
+          "statements": [
+            {
+              "Effect": "Allow",
+              "Action": "SNS:Subscribe",
+              "Principal": "AWS: *"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

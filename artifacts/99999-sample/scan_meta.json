@@ -1,0 +1,100 @@
+[
+  {
+    "rule": "ec2-ebs-volume-fault-tolerance",
+    "name": "EBS Volume is not fault tolerant",
+    "description": "One or more EBS volumes is does not utilize fault tolerant settings",
+    "recommendation": "Enable fault tolerance for all volumes",
+    "resource_type": "EBS",
+    "urls": [
+      {
+        "name": "AWS Encryption Settings",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html"
+      },
+      {
+        "name": "Dash Rule Documentation",
+        "url": "https://www.dashsdk.com/#"
+      }
+    ],
+    "key_fields": [
+      {
+        "Encrypted": "Encrypted"
+      },
+      {
+        "Attached Instance": ""
+      },
+      {
+        "Volume ID": "Attachments[VolumeID]"
+      },
+      {
+        "Volume Availability Zone": "AvailabilityZone"
+      },
+      {
+        "Availability Zone": "AvailabilityZone"
+      }
+    ]
+  },
+  {
+    "rule": "ec2-unencrypted-volumes",
+    "name": "Unencrypted EBS Volume",
+    "description": "One or more EBS volumes is unencrypted",
+    "recommendation": "Enable encryption for any unencrypted volumes",
+    "resource_type": "EBS",
+    "urls": [
+      {
+        "name": "AWS Encryption Settings",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html"
+      },
+      {
+        "name": "Dash Rule Documentation",
+        "url": "https://www.dashsdk.com/#"
+      }
+    ],
+    "key_fields": [
+      {
+        "Encrypted": "Encrypted"
+      },
+      {
+        "Attached Instance": ""
+      },
+      {
+        "Volume ID": "Attachments[VolumeID]"
+      },
+      {
+        "Volume Availability Zone": "AvailabilityZone"
+      },
+      {
+        "Availability Zone": "AvailabilityZone"
+      }
+    ]
+  },
+  {
+    "rule": "cloudtrail-logging-disabled",
+    "name": "EBS Volume is not fault tolerant",
+    "description": "One or more Trails has logging turned off in CloudTrails. It is recommended that logging is enabled for all Trails, in order to collect API activity across AWS.",
+    "recommendation": "Enable/resume logging for for each affected Trail where logging is turned off. This will allow CloudTrail to continue sending logs.",
+    "resource_type": "CloudTrail",
+    "urls": [
+      {
+        "name": "AWS - Turning Trail Logging Off/On",
+        "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-turning-off-logging.html"
+      }
+    ],
+    "key_fields": [
+      {
+        "Encrypted": "Encrypted"
+      },
+      {
+        "Attached Instance": ""
+      },
+      {
+        "Volume ID": "Attachments[VolumeID]"
+      },
+      {
+        "Volume Availability Zone": "AvailabilityZone"
+      },
+      {
+        "Availability Zone": "AvailabilityZone"
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "iam-users-with-active-keys",
+  "description": "Find iam users with access keys older than X days. Based on https://cloudcustodian.io/docs/aws/resources/iam-user.html#filters",
+  "resource": "iam-user",
+  "filters": [
+    {
+      "type": "access-key",
+      "key": "Status",
+      "value": "Active"
+    },
+    {
+      "type": "access-key",
+      "match-operator": "and",
+      "key": "CreateDate",
+      "value_type": "age",
+      "value": 0
+    }
+  ]
+}

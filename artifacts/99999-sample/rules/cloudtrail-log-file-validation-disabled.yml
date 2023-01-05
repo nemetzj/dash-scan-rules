@@ -1,0 +1,11 @@
+{
+  "name": "cloudtrail-log-file-validation-disabled",
+  "resource": "aws.cloudtrail",
+  "filters": [
+    {
+      "type": "value",
+      "key": "LogFileValidationEnabled",
+      "value": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "entity": {
+      "entity": "scan_rule",
+      "type": "custodian",
+      "value": "ec2-unencrypted-volumes"
+    },
+    "mapping": {
+      "entity": "category",
+      "value": "encryption"
+    }
+  },
+  {
+    "entity": {
+      "entity": "scan_rule",
+      "type": "custodian",
+      "value": "ec2-unencrypted-volumes"
+    },
+    "mapping": {
+      "entity": "category",
+      "value": "another-category"
+    }
+  },
+  {
+    "entity": {
+      "entity": "scan_rule",
+      "type": "custodian",
+      "value": "ec2-unencrypted-volumes"
+    },
+    "mapping": {
+      "entity": "sub_category",
+      "value": "encryption-at-rest"
+    }
+  }
+]

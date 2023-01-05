@@ -1,0 +1,8 @@
+{
+  "name": "ec2-stale-security-group",
+  "description": "VPC security group(s) are stale - https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html",
+  "resource": "security-group",
+  "filters": [
+    "stale"
+  ]
+}

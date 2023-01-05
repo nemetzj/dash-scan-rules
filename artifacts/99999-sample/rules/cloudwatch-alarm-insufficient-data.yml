@@ -1,0 +1,16 @@
+{
+  "name": "cloudwatch-alarm-insufficient-data",
+  "resource": "aws.alarm",
+  "filters": [
+    {
+      "type": "value",
+      "value_type": "age",
+      "key": "StateUpdatedTimestamp",
+      "value": 30,
+      "op": "ge"
+    },
+    {
+      "StateValue": "INSUFFICIENT_DATA"
+    }
+  ]
+}
