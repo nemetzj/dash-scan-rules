@@ -1,0 +1,11 @@
+{
+  "name": "iam-role-with-inline-policies",
+  "description": "Filter IAM roles that have an inline-policy attached - https://cloudcustodian.io/docs/aws/resources/iam-role.html#has-inline-policy",
+  "resource": "iam-role",
+  "filters": [
+    {
+      "type": "has-inline-policy",
+      "value": true
+    }
+  ]
+}

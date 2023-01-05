@@ -1,0 +1,11 @@
+{
+  "name": "iam-group-with-inline-policies",
+  "description": "Filter IAM groups that have an inline-policy - https://cloudcustodian.io/docs/aws/resources/iam-group.html#has-inline-policy",
+  "resource": "iam-group",
+  "filters": [
+    {
+      "type": "has-inline-policy",
+      "value": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "rds-instance-deletion-protection-disabled",
+  "resource": "rds",
+  "filters": [
+    {
+      "DeletionProtection": false
+    }
+  ]
+}

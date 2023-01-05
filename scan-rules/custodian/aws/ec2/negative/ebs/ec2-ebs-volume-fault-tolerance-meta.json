@@ -1,34 +1,47 @@
-[
-  {
-  "name": "ebs-volume-fault-tolerance",
-  "description": "EBS volume does not have a snapshot within the last 7 days",
-  "resource": "ebs"
+{
+  "rule": "ec2-ebs-volume-fault-tolerance",
+  "related_rules": {
+    "positive_rule": ""
   },
-  {
-    "recommendation": "",
-    "key_fields": [
-      {"Encrypted": "Encrypted"},
-      {"Attached Instance": ""},
-      {"Volume ID": "Attachments[VolumeID]"},
-      {"Volume Availability Zone": "AvailabilityZone"},
-      {"Availability Zone": "AvailabilityZone"}
-    ],
-    "categories": [
-      "backup-dr",
-      ""
-    ],
-    "priority": [
-      {"Default": "High"},
-      {"SOC 2": "High"},
-      {"HIPAA": "Medium"},
-      {"ISO 27001": "Medium"},
-      {"GDPR": "Medium"}
-    ],
-    "compliance_mappings": [
-      {"SOC 2": [ "CC6.1", "CC6.2" ]},
-      {"HIPAA": [ "TECH-1", "TECH-2" ]},
-      {"ISO 27001": [ "ISO-1", "ISO-2" ]},
-      {"GDPR": [ "GDPR-1", "GDPR-2" ]}
-    ]
-  }
-]
+
+  "name": "EBS Volume is not fault tolerant",
+  "description": "One or more EBS volumes is does not utilize fault tolerant settings",
+  "recommendation": "Enable fault tolerance for all volumes",
+  "resource_type": "EBS",
+
+  "urls": [
+    {"name": "AWS Encryption Settings", "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html" },
+    {"name": "Dash Rule Documentation", "url": "https://www.dashsdk.com/#" }
+  ],
+  "key_fields": [
+    {"Encrypted": "Encrypted"},
+    {"Attached Instance": ""},
+    {"Volume ID": "Attachments[VolumeID]"},
+    {"Volume Availability Zone": "AvailabilityZone"},
+    {"Availability Zone": "AvailabilityZone"}
+  ],
+  "security_categories": [
+    "encryption",
+    "another category"
+  ],
+  "security_sub_categories": [
+    "encryption-at-rest"
+  ],
+  "priority": [
+    {"Default": "High"},
+    {"SOC 2": "High"},
+    {"HIPAA": "Medium"},
+    {"ISO 27001": "Medium"},
+    {"GDPR": "Medium"}
+  ],
+  "related_policies": [
+    {
+      "id": "configuration-management-policy",
+      "policy_section": "6.1"
+    },
+    {
+      "id": "policy-management-policy",
+      "policy_section": "1.1"
+    }
+  ]
+}

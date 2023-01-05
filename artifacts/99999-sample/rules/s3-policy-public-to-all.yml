@@ -1,0 +1,10 @@
+{
+  "name": "s3-policy-public-to-all",
+  "resource": "s3",
+  "filters": [
+    {
+      "type": "cross-account",
+      "everyone_only": true
+    }
+  ]
+}

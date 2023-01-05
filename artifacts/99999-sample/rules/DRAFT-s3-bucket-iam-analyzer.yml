@@ -1,0 +1,12 @@
+{
+  "name": "s3-iam-analyzer",
+  "resource": "aws.s3",
+  "region": "us-east-1",
+  "filters": [
+    {
+      "type": "iam-analyzer",
+      "key": "isPublic",
+      "value": true
+    }
+  ]
+}

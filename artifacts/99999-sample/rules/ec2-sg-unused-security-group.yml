@@ -1,0 +1,8 @@
+{
+  "name": "ec2-unused-security-group",
+  "description": "VPC security groups that are not used",
+  "resource": "security-group",
+  "filters": [
+    "unused"
+  ]
+}

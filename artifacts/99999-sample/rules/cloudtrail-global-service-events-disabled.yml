@@ -1,0 +1,11 @@
+{
+  "name": "cloudtrail-global-service-events-disabled",
+  "resource": "aws.cloudtrail",
+  "filters": [
+    {
+      "type": "value",
+      "key": "IncludeGlobalServiceEvents",
+      "value": false
+    }
+  ]
+}

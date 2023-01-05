@@ -1,0 +1,11 @@
+{
+  "name": "iam-user-no-mfa",
+  "resource": "iam-user",
+  "filters": [
+    {
+      "type": "credential",
+      "key": "mfa_active",
+      "value": false
+    }
+  ]
+}

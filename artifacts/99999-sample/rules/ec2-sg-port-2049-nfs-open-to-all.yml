@@ -1,0 +1,29 @@
+{
+  "name": "ec2-port-2049-nfs-open-to-all",
+  "description": "Port 111 is open to all via security group ingress",
+  "resource": "security-group",
+  "filters": [
+    {
+      "or": [
+        {
+          "type": "ingress",
+          "Ports": [
+            2049
+          ],
+          "Cidr": {
+            "value": "0.0.0.0/0"
+          }
+        },
+        {
+          "type": "ingress",
+          "Ports": [
+            2049
+          ],
+          "CidrV6": {
+            "value": "::/0"
+          }
+        }
+      ]
+    }
+  ]
+}

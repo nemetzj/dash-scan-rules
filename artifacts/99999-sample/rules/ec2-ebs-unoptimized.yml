@@ -1,0 +1,13 @@
+{
+  "name": "ec2-ebs-unoptimized",
+  "description": "EBS volumes that are not optimized. Permissions Needed - ec2:DescribeInstanceAttribute",
+  "resource": "ec2",
+  "filters": [
+    {
+      "type": "instance-attribute",
+      "attribute": "ebsOptimized",
+      "key": "Value",
+      "value": false
+    }
+  ]
+}

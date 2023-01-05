@@ -1,0 +1,68 @@
+[
+  {
+    "mapping_type": "hipaa-security-rule",
+    "mapping_id": "TECH-1",
+    "name_id": "164.312(a)(1)",
+    "name": "Access Control",
+    "pointOfFocus": "",
+    "description": "",
+    "abstract_text": "This is the info from the compliance framework itself"
+  },
+  {
+    "mapping_type": "hipaa-security-rule",
+    "mapping_id": "TECH-2",
+    "name_id": "164.312(a)(2)",
+    "name": "",
+    "pointOfFocus": "",
+    "description": "",
+    "abstract_text": "This is the info from the compliance framework itself"
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "C1.1",
+    "name_id": "C1.1",
+    "name": "The entity identifies and maintains confidential information to meet the entity’s objectives related to confidentiality.",
+    "description": "",
+    "abstract_text": ""
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "C1.2",
+    "name_id": "C1.2",
+    "name": "The entity disposes of confidential information to meet the entity’s objectives related to confidentiality.",
+    "description": "",
+    "abstract_text": ""
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "CC1.2",
+    "name_id": "CC1.2",
+    "name": "COSO Principle 2: The board of directors demonstrates independence from management and exercises oversight of the development and performance of internal control.",
+    "description": "",
+    "abstract_text": ""
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "CC1.3",
+    "name_id": "CC1.3",
+    "name": "COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives.",
+    "description": "",
+    "abstract_text": ""
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "CC1.4",
+    "name_id": "CC1.4",
+    "name": "COSO Principle 4: The entity demonstrates a commitment to attract, develop, and retain competent individuals in alignment with objectives.",
+    "description": "",
+    "abstract_text": ""
+  },
+  {
+    "mapping_type": "soc2-tsc-2017",
+    "mapping_id": "CC1.5",
+    "name_id": "CC1.5",
+    "name": "COSO Principle 5: The entity holds individuals accountable for their internal control responsibilities in the pursuit of objectives.",
+    "description": "",
+    "abstract_text": ""
+  }
+]

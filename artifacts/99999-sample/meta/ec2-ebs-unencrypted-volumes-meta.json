@@ -1,0 +1,34 @@
+{
+  "rule": "ec2-unencrypted-volumes",
+  "name": "Unencrypted EBS Volume",
+  "description": "One or more EBS volumes is unencrypted",
+  "recommendation": "Enable encryption for any unencrypted volumes",
+  "resource_type": "EBS",
+  "urls": [
+    {
+      "name": "AWS Encryption Settings",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html"
+    },
+    {
+      "name": "Dash Rule Documentation",
+      "url": "https://www.dashsdk.com/#"
+    }
+  ],
+  "key_fields": [
+    {
+      "Encrypted": "Encrypted"
+    },
+    {
+      "Attached Instance": ""
+    },
+    {
+      "Volume ID": "Attachments[VolumeID]"
+    },
+    {
+      "Volume Availability Zone": "AvailabilityZone"
+    },
+    {
+      "Availability Zone": "AvailabilityZone"
+    }
+  ]
+}
