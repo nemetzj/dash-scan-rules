@@ -1,7 +1,8 @@
 import typer
 
-from single_custodian_rule import send_lambda_request, build_all_cloudcustodian_rules
+from single_custodian_rule import send_lambda_request
 from validate_custodian_rules import custodian_validate_one, custodian_validate_all
+from artifact_creation import build_all_custodian_artifacts
 #from build_custodian_rules import build_all_cloudcustodian_rules
 
 app = typer.Typer()
@@ -22,7 +23,7 @@ def run_lambda(scan_yml: str):
 
 @app.command()
 def create_artifacts():
-    build_all_cloudcustodian_rules()
+    build_all_custodian_artifacts()
 
 
 
