@@ -6,7 +6,7 @@
   },
   {
       "entity_type": "custodian_rule",
-      "rule_id": "ec2-ebs-volume-fault-tolerance",
-      "scan_meta_id": "ec2-ebs-volume-fault-tolerance"
-  },
+      "rule_id": "ec2-ebs-volume-encrypted",
+      "scan_meta_id": "ec2-ebs-volume-encrypted"
+  }
 ]
