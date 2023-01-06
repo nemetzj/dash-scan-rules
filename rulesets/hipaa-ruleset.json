@@ -1,0 +1,34 @@
+
+  {
+    "name": "HIPAA Security Ruleset",
+    "organization_id": "Dash",
+    "description": "",
+    "related_security_framework": [
+      "hipaa-security-rule"
+    ],
+    "include": [
+      {
+        "type": "security-framework",
+        "id": "hipaa-security-rule"
+      },
+      {
+        "type": "security-category",
+        "id": "Encryption"
+      },
+      {
+        "type": "sub-security-category",
+        "id": "Encryption At-Rest"
+      },
+      {
+        "type": "custodian-rule",
+        "id": "iam-inactivity-check"
+      },
+      {
+        "type": "custodian-rule",
+        "id": "other-scan"
+      }
+    ],
+    "exclude": [
+
+    ]
+  }
