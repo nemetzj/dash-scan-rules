@@ -101,7 +101,7 @@ class ruleset_to_custodian_rules(schema):
 ## Driver methods
 ## =================================================================================================
 
-
+# Create rulesets.json
 def build_all_rulesets():
     ruleset_schema = schema("ruleset");
 
@@ -122,27 +122,23 @@ def build_all_rulesets():
 
 
 
-def build_ruleset_to_security_framework():
-    ruleset_schema = schema("ruleset");
-
+# Create ruleset mappings
+# ruleset_to_security_framework.json
+# ruleset_to_security_categories.json
+# ruleset_to_custodian_rules.json
+def build_ruleset_mappings():
+    ruleset_schema = schema("ruleset_to_security_framework");
     file_list = get_all_filenames(RULESET_DIR, ".json")
 
     for file in file_list:
         f = input_file(RULESET_DIR, file)
         file_json = f.get_json()
-       
-        ruleset_obj = ruleset()
-        ruleset_obj.name = file_json["name"]
-        ruleset_obj.organization_id = file_json["organization_id"]
-        ruleset_obj.description = file_json["description"]
-        ruleset_obj.related_security_framework = file_json["related_security_framework"]
-        ruleset_schema.push(ruleset_obj)
 
-    ruleset_schema.create_file(CUSTODIAN_ARTIFACTS_DIR, "rulesets.json")
-
-
-
-
+        ruleset_submap = file_json["include"]
+        for i in ruleset_submap:
+            print (i)
+ 
 
 
 build_all_rulesets()
+#build_ruleset_to_security_framework()
