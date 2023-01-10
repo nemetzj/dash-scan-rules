@@ -1,52 +1,104 @@
 [
   {
-    "id": "access-control",
-    "name": "Access Control",
+    "security_category_id": "aa",
+    "label": "A&A",
+    "name": "Audit & Assurance",
     "description": ""
   },
   {
-    "id": "audit-logging",
-    "name": "Audit Logging",
+    "security_category_id": "ais",
+    "label": "AIS",
+    "name": "Application & Interface Security",
     "description": ""
   },
   {
-    "id": "availability",
-    "name": "Availability",
+    "security_category_id": "bcr",
+    "label": "BCR",
+    "name": "Business Continuity Management and Operational Resilience",
     "description": ""
   },
   {
-    "id": "backup-dr",
-    "name": "Backup & Disaster Recovery (DR)",
+    "security_category_id": "ccc",
+    "label": "CCC",
+    "name": "Change Control and Configuration Management",
     "description": ""
   },
   {
-    "id": "cost-savings",
-    "name": "Cost Optimization",
+    "security_category_id": "cek",
+    "label": "CEK",
+    "name": "Cryptography, Encryption & Key Management",
     "description": ""
   },
   {
-    "id": "data-integrity",
-    "name": "Data Integrity",
+    "security_category_id": "dcs",
+    "label": "DCS",
+    "name": "Datacenter Security",
     "description": ""
   },
   {
-    "id": "encryption",
-    "name": "Encryption",
+    "security_category_id": "dsp",
+    "label": "DSP",
+    "name": "Data Security and Privacy Lifecycle Management",
     "description": ""
   },
   {
-    "id": "maintenance",
-    "name": "Maintenance & Account Cleanup",
-    "description": "All rules, policies, and procedures related to maintaining the IT environment. This includes removing old/unused resources and replacing or removing old configurations"
-  },
-  {
-    "id": "networking",
-    "name": "Networking & Firewall",
+    "security_category_id": "grc",
+    "label": "GRC",
+    "name": "Governance, Risk and Compliance",
     "description": ""
   },
   {
-    "id": "patching",
-    "name": "Patches & Updates",
+    "security_category_id": "hrs",
+    "label": "HRS",
+    "name": "Human Resources",
+    "description": ""
+  },
+  {
+    "security_category_id": "iam",
+    "label": "IAM",
+    "name": "Identity & Access Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "ipy",
+    "label": "IPY",
+    "name": "Interoperability & Portability",
+    "description": ""
+  },
+  {
+    "security_category_id": "ivs",
+    "label": "IVS",
+    "name": "Infrastructure & Virtualization Security",
+    "description": ""
+  },
+  {
+    "security_category_id": "log",
+    "label": "LOG",
+    "name": "Logging and Monitoring",
+    "description": ""
+  },
+  {
+    "security_category_id": "sef",
+    "label": "SEF",
+    "name": "Security Incident Management, E-Discovery, & Cloud Forensics - ",
+    "description": ""
+  },
+  {
+    "security_category_id": "sta",
+    "label": "STA",
+    "name": "Supply Chain Management, Transparency, and Accountability",
+    "description": ""
+  },
+  {
+    "security_category_id": "tvm",
+    "label": "TVM",
+    "name": "Threat & Vulnerability Management",
+    "description": ""
+  },
+  {
+    "security_category_id": "uem",
+    "label": "UEM",
+    "name": "Universal Endpoint Management",
     "description": ""
   }
 ]

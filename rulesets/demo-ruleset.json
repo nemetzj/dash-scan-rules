@@ -1,0 +1,23 @@
+
+{
+  "ruleset_id": "demo_scanner_ruleset",
+  "name": "Demo Scanner Ruleset",
+  "organization_id": "Dash",
+  "description": "",
+  "related_security_framework": [
+
+  ],
+  "include": [
+    {
+      "type": "custodian-rule",
+      "id": "iam-inactivity-check"
+    },
+    {
+      "type": "custodian-rule",
+      "id": "other-scan"
+    }
+  ],
+  "exclude": [
+
+  ]
+}

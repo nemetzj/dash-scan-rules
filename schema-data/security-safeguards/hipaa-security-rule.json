@@ -1,7 +1,8 @@
 [
   {
-    "mapping_type": "hipaa-security-rule",
-    "mapping_id": "TECH-1",
+    "security_framework_id": "hipaa-security-rule",
+    "security_safeguard_id": "HIPAA-TECH-1",
+    "key_name": "TECH-1",
     "name_id": "164.312(a)(1)",
     "name": "Access Control",
     "pointOfFocus": "",
@@ -9,8 +10,9 @@
     "abstract_text": "This is the info from the compliance framework itself"
   },
   {
-    "mapping_type": "hipaa-security-rule",
-    "mapping_id": "TECH-2",
+    "security_framework_id": "hipaa-security-rule",
+    "security_safeguard_id": "HIPAA-TECH-2",
+    "key_name": "TECH-2",
     "name_id": "164.312(a)(2)",
     "name": "",
     "pointOfFocus": "",

@@ -1,5 +1,5 @@
 {
-  "rule": "ec2-unencrypted-volumes",
+  "rule_id": "ec2-unencrypted-volumes",
   "related_rules": {
     "positive_rule": "ec2-encrypted-volume-positive"
   },
@@ -17,15 +17,15 @@
     {"Encrypted": "Encrypted"},
     {"Attached Instance": ""},
     {"Volume ID": "Attachments[VolumeID]"},
-    {"Volume Availability Zone": "AvailabilityZone"},
-    {"Availability Zone": "AvailabilityZone"}
+    {"Volume Availability Zone": "AvailabilityZone"}
   ],
   "security_categories": [
-    "encryption",
-    "another category"
+    "cek",
+    "uem"
   ],
   "security_sub_categories": [
-    "encryption-at-rest"
+    "cek-03",
+    "uem-08"
   ],
   "priority": [
     {"Default": "High"},
