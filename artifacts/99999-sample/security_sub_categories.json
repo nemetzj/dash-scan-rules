@@ -1,983 +1,1179 @@
 [
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-01",
     "name": "Audit and Assurance Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-02",
     "name": "Independent Assessments",
     "description": ""
   },
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-03",
     "name": "Risk Based Planning Assessment",
     "description": ""
   },
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-04",
     "name": "Requirements Compliance",
     "description": ""
   },
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-05",
     "name": "Audit Management Process",
     "description": ""
   },
   {
-    "security_category_id": "A&A",
+    "security_category_id": "aa",
+    "security_sub_category_id": "aa-06",
     "name": "Remediation",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-01",
     "name": "Application and Interface Security Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-02",
     "name": "Application Security Baseline Requirements",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-03",
     "name": "Application Security Metrics",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-04",
     "name": "Secure Application Design and Development",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-05",
     "name": "Automated Application Security Testing",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-06",
     "name": "Automated Secure Application Deployment",
     "description": ""
   },
   {
-    "security_category_id": "AIS",
+    "security_category_id": "ais",
+    "security_sub_category_id": "ais-07",
     "name": "Application Vulnerability Remediation",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-01",
     "name": "Business Continuity Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-02",
     "name": "Risk Assessment and Impact Analysis",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-03",
     "name": "Business Continuity Strategy",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-04",
     "name": "Business Continuity Planning",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-05",
     "name": "Documentation",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-06",
     "name": "Business Continuity Exercises",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-07",
     "name": "Communication",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-08",
     "name": "Backup",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-09",
     "name": "Disaster Response Plan",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-10",
     "name": "Response Plan Exercise",
     "description": ""
   },
   {
-    "security_category_id": "BCR",
+    "security_category_id": "bcr",
+    "security_sub_category_id": "bcr-11",
     "name": "Equipment Redundancy",
     "description": ""
   },
 
 
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-01",
     "name": "Change Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-02",
     "name": "Quality Testing",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-03",
     "name": "Change Management Technology",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-04",
     "name": "Unauthorized Change Protection",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-05",
     "name": "Change Agreements",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-06",
     "name": "Change Management Baseline",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-07",
     "name": "Detection of Baseline Deviation",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-08",
     "name": "Exception Management",
     "description": ""
   },
   {
-    "security_category_id": "CCC",
+    "security_category_id": "ccc",
+    "security_sub_category_id": "ccc-09",
     "name": "Change Restoration",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-01",
     "name": "Encryption and Key Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-02",
     "name": "CEK Roles and Responsibilities",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-03",
     "name": "Data Encryption",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-04",
     "name": "Encryption Algorithm",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-05",
     "name": "Encryption Change Management",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-06",
     "name": "Encryption Change Cost Benefit Analysis",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-07",
     "name": "Encryption Risk Management",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-08",
     "name": "CSC Key Management Capability",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-09",
     "name": "Encryption and Key Management Audit",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-10",
     "name": "Key Generation",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-11",
     "name": "Key Purpose",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-12",
     "name": "Key Rotation",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-13",
     "name": "Key Revocation",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-14",
     "name": "Key Activation",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-15",
     "name": "Key Suspension",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-16",
     "name": "Key Deactivation",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-17",
     "name": "Key Archival",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-18",
     "name": "Key Compromise",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-19",
     "name": "Key Recovery",
     "description": ""
   },
   {
-    "security_category_id": "CEK",
+    "security_category_id": "cek",
+    "security_sub_category_id": "cek-20",
     "name": "Key Inventory Management",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-01",
     "name": "Off-Site Equipment Disposal Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-02",
     "name": "Off-Site Transfer Authorization Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-02",
     "name": "Secure Area Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-03",
     "name": "Secure Media Transportation Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-04",
     "name": "Assets Classification",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-05",
     "name": "Assets Cataloguing and Tracking",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-06",
     "name": "Controlled Access Points",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-07",
     "name": "Equipment Identification",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-08",
     "name": "Secure Area Authorization",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-09",
     "name": "Surveillance System",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-10",
     "name": "Unauthorized Access Response Training",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-11",
     "name": "Cabling Security",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-12",
     "name": "Environmental Systems",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-13",
     "name": "Secure Utilities",
     "description": ""
   },
   {
-    "security_category_id": "DCS",
+    "security_category_id": "dcs",
+    "security_sub_category_id": "dcs-14",
     "name": "Equipment Location",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-01",
     "name": "Security and Privacy Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-02",
     "name": "Secure Disposal",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-03",
     "name": "Data Inventory",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-04",
     "name": "Data Classification",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-05",
     "name": "Data Flow Documentation",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-06",
     "name": "Data Ownership and Stewardship",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-07",
     "name": "Data Protection by Design and Default",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-08",
     "name": "Data Privacy by Design and Default",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-09",
     "name": "Data Protection Impact Assessment",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-10",
     "name": "Sensitive Data Transfer",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-11",
     "name": "Personal Data Access, Reversal, Rectification and Deletion",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-12",
     "name": "Limitation of Purpose in Personal Data Processing",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-13",
     "name": "Personal Data Sub-processing",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-14",
     "name": "Disclosure of Data Sub-processors",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-15",
     "name": "Limitation of Production Data Use",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-16",
     "name": "Data Retention and Deletion",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-17",
     "name": "Sensitive Data Protection",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-18",
     "name": "Disclosure Notification",
     "description": ""
   },
   {
-    "security_category_id": "DSP",
+    "security_category_id": "dsp",
+    "security_sub_category_id": "dsp-19",
     "name": "Data Location",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-01",
     "name": "Governance Program Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-02",
     "name": "Risk Management Program",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-03",
     "name": "Organizational Policy Reviews",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-04",
     "name": "Policy Exception Process",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-05",
     "name": "Information Security Program",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-06",
     "name": "Governance Responsibility Model",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-07",
     "name": "Information System Regulatory Mapping",
     "description": ""
   },
   {
-    "security_category_id": "GRC",
+    "security_category_id": "grc",
+    "security_sub_category_id": "grc-08",
     "name": "Special Interest Groups",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-01",
     "name": "Background Screening Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-02",
     "name": "Acceptable Use of Technology Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-03",
     "name": "Clean Desk Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-04",
     "name": "Remote and Home Working Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-05",
     "name": "Asset returns",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-06",
     "name": "Employment Termination",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-07",
     "name": "Employment Agreement Process",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-08",
     "name": "Employment Agreement Content",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-09",
     "name": "Personnel Roles and Responsibilities",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-10",
     "name": "Non-Disclosure Agreements",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-11",
     "name": "Security Awareness Training",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-12",
     "name": "Personal and Sensitive Data Awareness and Training",
     "description": ""
   },
   {
-    "security_category_id": "HRS",
+    "security_category_id": "hrs",
+    "security_sub_category_id": "hrs-13",
     "name": "Compliance User Responsibility",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-01",
     "name": "Identity and Access Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-02",
     "name": "Strong Password Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-03",
     "name": "Identity Inventory",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-04",
     "name": "Separation of Duties",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-05",
     "name": "Least Privilege",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-06",
     "name": "User Access Provisioning",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-07",
     "name": "User Access Changes and Revocation",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-08",
     "name": "User Access Review",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-09",
     "name": "Segregation of Privileged Access Roles",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-10",
     "name": "Management of Privileged Access Roles",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-11",
     "name": "CSCs Approval for Agreed Privileged Access Roles",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-12",
     "name": "Safeguard Logs Integrity",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-13",
     "name": "Uniquely Identifiable Users",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-14",
     "name": "Strong Authentication",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-15",
     "name": "Passwords Management",
     "description": ""
   },
   {
-    "security_category_id": "IAM",
+    "security_category_id": "iam",
+    "security_sub_category_id": "iam-16",
     "name": "Authorization Mechanisms",
     "description": ""
   },
   {
-    "security_category_id": "IPY",
+    "security_category_id": "ipy",
+    "security_sub_category_id": "ipy-01",
     "name": "Interoperability and Portability Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "IPY",
+    "security_category_id": "ipy",
+    "security_sub_category_id": "ipy-02",
     "name": "Application Interface Availability",
     "description": ""
   },
   {
-    "security_category_id": "IPY",
+    "security_category_id": "ipy",
+    "security_sub_category_id": "ipy-03",
     "name": "Secure Interoperability and Portability Management",
     "description": ""
   },
   {
-    "security_category_id": "IPY",
+    "security_category_id": "ipy",
+    "security_sub_category_id": "ipy-04",
     "name": "Data Portability Contractual Obligations",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-01",
     "name": "Infrastructure and Virtualization Security Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-02",
     "name": "Capacity and Resource Planning",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-03",
     "name": "Network Security",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-04",
     "name": "OS Hardening and Base Controls",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-05",
     "name": "Production and Non-Production Environments",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-06",
     "name": "Segmentation and Segregation",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-07",
     "name": "Migration to Cloud Environments",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-08",
     "name": "Network Architecture Documentation",
     "description": ""
   },
   {
-    "security_category_id": "IVS",
+    "security_category_id": "ivs",
+    "security_sub_category_id": "ivs-09",
     "name": "Network Defense",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-01",
     "name": "Logging and Monitoring Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-02",
     "name": "Audit Logs Protection",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-03",
     "name": "Security Monitoring and Alerting",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-04",
     "name": "Audit Logs Access and Accountability",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-05",
     "name": "Audit Logs Monitoring and Response",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-06",
     "name": "Clock Synchronization",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-07",
     "name": "Logging Scope",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-08",
     "name": "Log Records",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-09",
     "name": "Log Protection",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-10",
     "name": "Encryption Monitoring and Reporting",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-11",
     "name": "Transaction/Activity Logging",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-12",
     "name": "Access Control Logs",
     "description": ""
   },
   {
-    "security_category_id": "LOG",
+    "security_category_id": "log",
+    "security_sub_category_id": "log-13",
     "name": "Failures and Anomalies Reporting",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-01",
     "name": "Security Incident Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-02",
     "name": "Service Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-03",
     "name": "Incident Response Plans",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-04",
     "name": "Incident Response Testing",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-05",
     "name": "Incident Response Metrics",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-06",
     "name": "Event Triage Processes",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-07",
     "name": "Security Breach Notification",
     "description": ""
   },
   {
-    "security_category_id": "SEF",
+    "security_category_id": "sef",
+    "security_sub_category_id": "sef-08",
     "name": "Points of Contact Maintenance",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-01",
     "name": "SSRM Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-02",
     "name": "SSRM Supply Chain",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-03",
     "name": "SSRM Guidance",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-04",
     "name": "SSRM Control Ownership",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-05",
     "name": "SSRM Documentation Review",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-06",
     "name": "SSRM Control Implementation",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-07",
     "name": "Supply Chain Inventory",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-08",
     "name": "Supply Chain Risk Management",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-09",
     "name": "Primary Service and Contractual Agreement",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-10",
     "name": "Supply Chain Agreement Review",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-11",
     "name": "Internal Compliance Testing",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-12",
     "name": "Supply Chain Service Agreement Compliance",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-13",
     "name": "Supply Chain Governance Review",
     "description": ""
   },
   {
-    "security_category_id": "STA",
+    "security_category_id": "sta",
+    "security_sub_category_id": "sta-14",
     "name": "Supply Chain Data Security Assessment",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-01",
     "name": "Threat and Vulnerability Management Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-02",
     "name": "Malware Protection Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-03",
     "name": "Vulnerability Remediation Schedule",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-04",
     "name": "Detection Updates",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-05",
     "name": "External Library Vulnerabilities",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-06",
     "name": "Penetration Testing",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-07",
     "name": "Vulnerability Identification",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-08",
     "name": "Vulnerability Prioritization",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-09",
     "name": "Vulnerability Management Reporting",
     "description": ""
   },
   {
-    "security_category_id": "TVM",
+    "security_category_id": "tvm",
+    "security_sub_category_id": "tvm-10",
     "name": "Vulnerability Management Metrics",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-01",
     "name": "Endpoint Devices Policy and Procedures",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-02",
     "name": "Application and Service Approval",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-03",
     "name": "Compatibility",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-04",
     "name": "Endpoint Inventory",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-05",
     "name": "Endpoint Management",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-06",
     "name": "Automatic Lock Screen",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-07",
     "name": "Operating Systems",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-08",
     "name": "Storage Encryption",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-09",
     "name": "Anti-Malware Detection and Prevention",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-10",
     "name": "Software Firewall",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-11",
     "name": "Data Loss Prevention",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-12",
     "name": "Remote Locate",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-13",
     "name": "Remote Wipe",
     "description": ""
   },
   {
-    "security_category_id": "UEM",
+    "security_category_id": "uem",
+    "security_sub_category_id": "uem-14",
     "name": "Third-Party Endpoint Security Posture",
     "description": ""
   }

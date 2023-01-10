@@ -1,6 +1,7 @@
 [
   {
     "security_framework_id": "hipaa-security-rule",
+    "security_safeguard_id": "HIPAA-TECH-1",
     "key_name": "TECH-1",
     "name_id": "164.312(a)(1)",
     "name": "Access Control",
@@ -10,6 +11,7 @@
   },
   {
     "security_framework_id": "hipaa-security-rule",
+    "security_safeguard_id": "HIPAA-TECH-2",
     "key_name": "TECH-2",
     "name_id": "164.312(a)(2)",
     "name": "",

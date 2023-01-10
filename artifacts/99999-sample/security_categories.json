@@ -1,86 +1,103 @@
 [
   {
-    "id": "A&A",
-    "name": "Audit & Assurance - A&A",
+    "security_category_id": "aa",
+    "label": "A&A",
+    "name": "Audit & Assurance",
     "description": ""
   },
   {
-    "id": "AIS",
+    "security_category_id": "ais",
+    "label": "AIS",
     "name": "Application & Interface Security",
     "description": ""
   },
   {
-    "id": "BCR",
+    "security_category_id": "bcr",
+    "label": "BCR",
     "name": "Business Continuity Management and Operational Resilience",
     "description": ""
   },
   {
-    "id": "CCC",
+    "security_category_id": "ccc",
+    "label": "CCC",
     "name": "Change Control and Configuration Management",
     "description": ""
   },
   {
-    "id": "CEK",
+    "security_category_id": "cek",
+    "label": "CEK",
     "name": "Cryptography, Encryption & Key Management",
     "description": ""
   },
   {
-    "id": "DCS",
+    "security_category_id": "dcs",
+    "label": "DCS",
     "name": "Datacenter Security",
     "description": ""
   },
   {
-    "id": "DSP",
+    "security_category_id": "dsp",
+    "label": "DSP",
     "name": "Data Security and Privacy Lifecycle Management",
     "description": ""
   },
   {
-    "id": "GRC",
+    "security_category_id": "grc",
+    "label": "GRC",
     "name": "Governance, Risk and Compliance",
     "description": ""
   },
   {
-    "id": "HRS",
+    "security_category_id": "hrs",
+    "label": "HRS",
     "name": "Human Resources",
     "description": ""
   },
   {
-    "id": "IAM",
+    "security_category_id": "iam",
+    "label": "IAM",
     "name": "Identity & Access Management",
     "description": ""
   },
   {
-    "id": "IPY",
+    "security_category_id": "ipy",
+    "label": "IPY",
     "name": "Interoperability & Portability",
     "description": ""
   },
   {
-    "id": "IVS",
+    "security_category_id": "ivs",
+    "label": "IVS",
     "name": "Infrastructure & Virtualization Security",
     "description": ""
   },
   {
-    "id": "LOG",
+    "security_category_id": "log",
+    "label": "LOG",
     "name": "Logging and Monitoring",
     "description": ""
   },
   {
-    "id": "SEF",
+    "security_category_id": "sef",
+    "label": "SEF",
     "name": "Security Incident Management, E-Discovery, & Cloud Forensics - ",
     "description": ""
   },
   {
-    "id": "STA",
+    "security_category_id": "sta",
+    "label": "STA",
     "name": "Supply Chain Management, Transparency, and Accountability",
     "description": ""
   },
   {
-    "id": "TVM",
+    "security_category_id": "tvm",
+    "label": "TVM",
     "name": "Threat & Vulnerability Management",
     "description": ""
   },
   {
-    "id": "UEM",
+    "security_category_id": "uem",
+    "label": "UEM",
     "name": "Universal Endpoint Management",
     "description": ""
   }

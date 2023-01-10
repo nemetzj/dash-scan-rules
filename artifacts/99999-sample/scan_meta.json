@@ -1,6 +1,6 @@
 [
   {
-    "rule": "ec2-ebs-volume-fault-tolerance",
+    "rule_id": "ec2-ebs-volume-fault-tolerance",
     "name": "EBS Volume is not fault tolerant",
     "description": "One or more EBS volumes is does not utilize fault tolerant settings",
     "recommendation": "Enable fault tolerance for all volumes",
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "rule": "ec2-unencrypted-volumes",
+    "rule_id": "ec2-unencrypted-volumes",
     "name": "Unencrypted EBS Volume",
     "description": "One or more EBS volumes is unencrypted",
     "recommendation": "Enable encryption for any unencrypted volumes",
@@ -68,7 +68,7 @@
     ]
   },
   {
-    "rule": "cloudtrail-logging-disabled",
+    "rule_id": "cloudtrail-logging-disabled",
     "name": "EBS Volume is not fault tolerant",
     "description": "One or more Trails has logging turned off in CloudTrails. It is recommended that logging is enabled for all Trails, in order to collect API activity across AWS.",
     "recommendation": "Enable/resume logging for for each affected Trail where logging is turned off. This will allow CloudTrail to continue sending logs.",

@@ -1,98 +1,35 @@
-[
-  {
-    "ruleset_id": "Brett's HIPAA Security Ruleset",
-    "author_organization_id": "Dash",
-    "name": "HIPAA Security Ruleset",
-    "description": "",
-    "related_security_framework": [
-      "hipaa-security-rule"
-    ],
-    "include": [
-      {
-        "type": "security-framework",
-        "id": "hipaa-security-rule"
-      },
-      {
-        "type": "security-category",
-        "id": "Encryption"
-      },
-      {
-        "type": "sub-security-category",
-        "id": "Encryption At-Rest"
-      },
-      {
-        "type": "custodian-rule",
-        "id": "iam-inactivity-check"
-      },
-      {
-        "type": "custodian-rule",
-        "id": "other-scan"
-      }
-    ],
-    "exclude": [
 
-    ]
-  },
+{
+  "ruleset_id": "hipaa_security_ruleset",
+  "name": "HIPAA Security Ruleset",
+  "organization_id": "Dash",
+  "description": "",
+  "related_security_framework": [
+    "hipaa-security-rule"
+  ],
+  "include": [
+    {
+      "type": "security-framework",
+      "id": "hipaa-security-rule"
+    },
+    {
+      "type": "security-category",
+      "id": "aa"
+    },
+    {
+      "type": "sub-security-category",
+      "id": "aa-02"
+    },
+    {
+      "type": "custodian-rule",
+      "id": "iam-inactivity-check"
+    },
+    {
+      "type": "custodian-rule",
+      "id": "other-scan"
+    }
+  ],
+  "exclude": [
 
-  {
-    "ruleset_id": "HIPAA Security Ruleset",
-    "author_organization_id": "Dash",
-    "name": "HIPAA Security Ruleset",
-    "description": "",
-    "security_framework": [
-      "hipaa-security-rule"
-    ]
-  },
-
-
-
-
-  {
-    "ruleset_id": "SOC 2 Security Ruleset",
-    "author_organization_id": "Dash",
-    "name": "SOC 2 Security Ruleset",
-    "description": "",
-    "security_framework": [
-      "soc2-tsc-2017"
-    ]
-  },
-
-
-
-
-
-
-
-
-  {
-    "ruleset_id": "HIPAA Security Ruleset",
-    "author_organization_id": "Dash",
-    "name": "HIPAA Security Ruleset",
-    "description": "",
-    "security_framework": ["hipaa-security-rule"],
-    "security_categories": [
-      "Access Control",
-      "Encryption"
-    ]
-  },
-
-
-  {
-    "ruleset_id": "HIPAA Security Ruleset Passing",
-    "author": "Dash",
-    "name": "HIPAA Security Ruleset (Passing)",
-    "description": "",
-    "security_framework": ["hipaa-security-rule"],
-    "rules": [
-      {
-        "type": "custodian",
-        "id": "ebs-volume-fault-tolerance-PASSING"
-      },
-      {
-        "type": "custodian",
-        "id": "another-scan-PASSING"
-      }
-    ]
-  }
-]
-
+  ]
+}

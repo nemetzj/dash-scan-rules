@@ -1,18 +1,17 @@
 [
   {
-    "security_safeguard_id": "HIPAA-1 (Access Control)",
+    "security_safeguard_id": "HIPAA-TECH-1",
     "entity_type": "security_categories",
-    "entity_id": "Access Control"
+    "entity_id": "aa"
   },
   {
-    "security_safeguard_id": "HIPAA-1 (Access Control)",
+    "security_safeguard_id": "HIPAA-TECH-1",
     "entity_type": "security_sub_categories",
-    "entity_id": "Automatic Logoff"
+    "entity_id": "aa-01"
   },
   {
-    "security_safeguard_id": "HIPAA-1 (Access Control)",
-    "entity_type": "custodian-rule",
+    "security_safeguard_id": "HIPAA-TECH-1",
+    "entity_type": "custodian_rule",
     "entity_id": "iam_user_with_too-many_permissions"
   }
-
 ]
