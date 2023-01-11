@@ -140,5 +140,5 @@ def build_ruleset_mappings():
  
 
 
-build_all_rulesets()
+#build_all_rulesets()
 #build_ruleset_to_security_framework()
